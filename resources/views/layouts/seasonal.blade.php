@@ -2,7 +2,7 @@
   <article role="article" about="#" class="widget-tiles seasonal clearfix">
   <div class="content">
     <h2 class="tiles-container-heading">
-      <a title="Seasonal Attractions" href="#">Sức hấp dẫn du lịch biển Hà Tĩnh</a>
+      <a title="Seasonal Attractions" href="#">Trải nghiệm cuộc sống</a>
     </h2>
     <div class="field field--name-field-tiles field--type-entity-reference field--label-hidden seasonal field--items">
       <div class="field--item">

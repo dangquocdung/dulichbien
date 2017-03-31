@@ -84,7 +84,7 @@
           </li><!-- destination -->
           {{-- thing to do --}}
           <li class="dropdown yamm-fw">
-            <a href="/destinations" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>Hoạt động khác</a>
+            <a href="/destinations" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>Vui chơi, Giải trí</a>
             <ul class="dropdown-menu">
               <li>
                 <div class="yamm-content">

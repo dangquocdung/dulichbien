@@ -2,7 +2,7 @@
   <article role="article" about="#" class="widget-tiles deals-slider clearfix">
     <div class="content">
       <h2 class="tiles-container-heading">
-        <a title="Deals &amp; Packages" href="#">Du lịch theo Tour</a>
+        <a title="Deals &amp; Packages" href="#">Tận hưởng thiên nhiên</a>
       </h2>
       <div class="deals-gallery">
         <div class="owl-carousel owl-theme">

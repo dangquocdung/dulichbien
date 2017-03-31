@@ -1,7 +1,7 @@
 <div class="field--item">
   <article role="article" about="#" class="product-list-page product-list-widget clearfix">
   <div class="content">
-    <h2 class="tiles-container-heading"><a title="What's ON" href="#">Sự kiện đang diễn ra</a></h2>
+    <h2 class="tiles-container-heading"><a title="What's ON" href="#">Tham gia sự kiện</a></h2>
     <div class="field field--name-field-product-list field--type-product-list field--label-hidden field--item">
       <div id="loading-ajax">
         <div id="loader-ajax"></div>
