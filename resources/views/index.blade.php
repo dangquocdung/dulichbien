@@ -107,14 +107,22 @@
                   <div class="item image-slider active" data-slide-to="0">
                     <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                       <picture>
-                        <img srcset="./public/upload/bien-ha-tinh-buoi-sang.jpg" alt="Bình minh trên biển" title="Bình minh trên biển" typeof="foaf:Image" class="img-responsive img-unveil">
+                        <img srcset="./upload/bien-ha-tinh-buoi-sang.jpg" alt="Bình minh trên biển" title="Bình minh trên biển" typeof="foaf:Image" class="img-responsive img-unveil">
                       </picture>
                     </div>
                   </div>
                   <div class="item image-slider" data-slide-to="1">
                     <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                       <picture>
-                        <img srcset="./public/upload/hoang-hon-tren-bien.jpg" alt="Hoàng hôn trên biển" title="Hoàng hôn trên biển" typeof="foaf:Image" class="img-responsive img-unveil">
+                        <img srcset="./upload/hoang-hon-tren-bien.jpg" alt="Hoàng hôn trên biển" title="Hoàng hôn trên biển" typeof="foaf:Image" class="img-responsive img-unveil">
+                      </picture>
+                    </div>
+                  </div>
+
+                  <div class="item image-slider" data-slide-to="2">
+                    <div class="field field--name-field-image field--type-image field--label-hidden field--item">
+                      <picture>
+                        <img srcset="./upload/co-gai-tren-bo-bien.jpg" alt="Hoàng hôn trên biển" title="Hoàng hôn trên biển" typeof="foaf:Image" class="img-responsive img-unveil">
                       </picture>
                     </div>
                   </div>
@@ -122,7 +130,7 @@
                   <ol class="carousel-indicators">
                     <li data-target="#header-slider" data-slide-to="0" class="active">
                     <span>1</span>
-                    <div class="carousel-caption size2">
+                    <div class="carousel-caption size3">
                       <div class="note-box">
                         <div class="icon icon-only fa fa-info"></div>
                         <div class="popup">Bình minh trên biển</div>
@@ -131,7 +139,16 @@
                   </li>
                   <li data-target="#header-slider" data-slide-to="1" class="">
                     <span>2</span>
-                    <div class="carousel-caption size2">
+                    <div class="carousel-caption size3">
+                      <div class="note-box">
+                        <div class="icon icon-only fa fa-info"></div>
+                        <div class="popup">Hoàng hôn trên biển</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-target="#header-slider" data-slide-to="2" class="">
+                    <span>3</span>
+                    <div class="carousel-caption size3">
                       <div class="note-box">
                         <div class="icon icon-only fa fa-info"></div>
                         <div class="popup">Hoàng hôn trên biển</div>
@@ -166,31 +183,31 @@
 
                     <div class="field field--name-field-widget-bottom field--type-entity-reference field--label-hidden field--items">
                       <div class="field--item">
-                        <article role="article" about="http://int.sydney.com/node/2321" class="widget-tiles deals-slider clearfix">
+                        <article role="article" about="#" class="widget-tiles deals-slider clearfix">
                           <div class="content">
                             <h2 class="tiles-container-heading">
-                              <a title="Deals &amp; Packages" href="http://int.sydney.com/deals">Du lịch theo Tour</a>
+                              <a title="Deals &amp; Packages" href="#">Du lịch theo Tour</a>
                             </h2>
 
                             <div class="deals-gallery">
 
                               <div class="col-md-4">
-                                <img srcset="./public/upload/dua-cho-xuan-thanh.jpg" alt="Arsenal VS Sydney FC" typeof="foaf:Image" class="img-responsive img-unveil">
+                                <img srcset="./upload/dua-cho-xuan-thanh.jpg" alt="Trung tâm đua chó Xuân Thành" typeof="foaf:Image" class="img-responsive img-unveil">
                                 <h2 class="tile-heading">
-                                  <a href="#" title="Arsenal FC coming to Sydney in 2017">Trung tâm đua chó Xuân Thành</a>
+                                  <a href="#" title="Trung tâm đua chó Xuân Thành">Trung tâm đua chó Xuân Thành</a>
                                 </h2>
                               </div>
 
                               <div class="col-md-4">
-                                <img srcset="./public/upload/nghi-duong.jpg" alt="Arsenal VS Sydney FC" typeof="foaf:Image" class="img-responsive img-unveil">
+                                <img srcset="./upload/nghi-duong.jpg" alt="Hệ thống khách sạn, resort" typeof="foaf:Image" class="img-responsive img-unveil">
 
                                 <h2 class="tile-heading">
-                                  <a href="#" title="Những điểm tuyệt vời để nghĩ dưỡng tại Hà Tĩnh">Hệ thống khách sạn, resort</a>
+                                  <a href="#" title="Hệ thống khách sạn, resorth">Hệ thống khách sạn, resort</a>
                                 </h2>
                               </div>
 
                               <div class="col-md-4">
-                                <img srcset="./public/upload/bo-bien.jpg" alt="Arsenal VS Sydney FC" typeof="foaf:Image" class="img-responsive img-unveil">
+                                <img srcset="./upload/bo-bien.jpg" alt="Khám phá bờ biển Hà Tĩnh" typeof="foaf:Image" class="img-responsive img-unveil">
                                 <h2 class="tile-heading">
                                   <a href="#" title="Khám phá bờ biển Hà Tĩnh">Khám phá bờ biển Hà Tĩnh</a>
                                 </h2>
@@ -215,7 +232,7 @@
                                         <article class="media media-image view-mode-seasonal-tiles">
                                           <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                                             <picture>
-                                              <img srcset="./public/upload/beach-lifestyle.jpg" alt="Beach lifestyle" title="Beach lifestyle" typeof="foaf:Image" class="img-responsive img-unveil">
+                                              <img srcset="./upload/beach-lifestyle.jpg" alt="Beach lifestyle" title="Beach lifestyle" typeof="foaf:Image" class="img-responsive img-unveil">
                                             </picture>
                                           </div>
                                         </article>
@@ -240,7 +257,7 @@
                                         <article class="media media-image view-mode-seasonal-tiles">
                                           <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                                             <picture>
-                                              <img srcset="./public/upload/food-and-wine.jpg" alt="Beach lifestyle" title="Beach lifestyle" typeof="foaf:Image" class="img-responsive img-unveil">
+                                              <img srcset="./upload/food-and-wine.jpg" alt="Đồ ăn - Thức uống" title="Đồ ăn - Thức uống" typeof="foaf:Image" class="img-responsive img-unveil">
                                             </picture>
                                           </div>
                                         </article>
@@ -248,7 +265,7 @@
                                     </a>
                                     <div class="seasonal-wrapper" onclick="">
                                       <h2 class="tile-heading">
-                                        <a href="#" title="Beach lifestyle">Đồ ăn - Thức uống</a>
+                                        <a href="#" title="Đồ ăn - Thức uống">Đồ ăn - Thức uống</a>
                                       </h2>
 
                                     </div>
@@ -266,7 +283,7 @@
                                         <article class="media media-image view-mode-seasonal-tiles">
                                           <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                                             <picture>
-                                              <img srcset="./public/upload/shopping-and-fashion.jpg" alt="Beach lifestyle" title="Beach lifestyle" typeof="foaf:Image" class="img-responsive img-unveil">
+                                              <img srcset="./upload/shopping-and-fashion.jpg" alt="Mua sắm" title="Mua sắm" typeof="foaf:Image" class="img-responsive img-unveil">
                                             </picture>
                                           </div>
                                         </article>
@@ -274,7 +291,7 @@
                                     </a>
                                     <div class="seasonal-wrapper" onclick="">
                                       <h2 class="tile-heading">
-                                        <a href="#" title="Beach lifestyle">Mua sắm</a>
+                                        <a href="#" title="Mua sắm">Mua sắm</a>
                                       </h2>
 
                                     </div>
@@ -292,7 +309,7 @@
                                         <article class="media media-image view-mode-seasonal-tiles">
                                           <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                                             <picture>
-                                              <img srcset="./public/upload/working-holidays.jpg" alt="Beach lifestyle" title="Beach lifestyle" typeof="foaf:Image" class="img-responsive img-unveil">
+                                              <img srcset="./upload/working-holidays.jpg" alt="Làm việc -Vui chơi - Học hỏi" title="Làm việc -Vui chơi - Học hỏi" typeof="foaf:Image" class="img-responsive img-unveil">
                                             </picture>
                                           </div>
                                         </article>
@@ -300,7 +317,7 @@
                                     </a>
                                     <div class="seasonal-wrapper" onclick="">
                                       <h2 class="tile-heading">
-                                        <a href="#" title="Beach lifestyle">Làm việc -Vui chơi - Học hỏi</a>
+                                        <a href="#" title="Làm việc -Vui chơi - Học hỏi">Làm việc -Vui chơi - Học hỏi</a>
                                       </h2>
 
                                     </div>
@@ -332,7 +349,7 @@
                                 <li itemprop="event" itemscope_itemtype="http://schema.org/Event" data-id="56b23f7cd5f1565045d84b2e" class="col-xs-12 col-sm-6 col-md-4 events-li product-list-widget">
                                   <article class="event" itemprop="itemListElement">
                                     <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week" class="image">
-                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600" data-src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600">
+                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/ff6b78246114cd186a812ded9ef40716.jpeg?rect=166,0,2668,2001&w=800&h=600" data-src="https://assets.atdw-online.com.au/images/ff6b78246114cd186a812ded9ef40716.jpeg?rect=166,0,2668,2001&w=800&h=600">
                                     </a>
                                     <div class="info event-data">
 
@@ -363,7 +380,7 @@
                                 <li itemprop="event" itemscope_itemtype="http://schema.org/Event" data-id="56b23f7cd5f1565045d84b2e" class="col-xs-12 col-sm-6 col-md-4 events-li product-list-widget">
                                   <article class="event" itemprop="itemListElement">
                                     <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week" class="image">
-                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600" data-src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600">
+                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/ff6b78246114cd186a812ded9ef40716.jpeg?rect=166,0,2668,2001&w=800&h=600" data-src="https://assets.atdw-online.com.au/images/ff6b78246114cd186a812ded9ef40716.jpeg?rect=166,0,2668,2001&w=800&h=600">
                                     </a>
                                     <div class="info event-data">
 
@@ -391,103 +408,11 @@
                                   </article>
                                 </li>
 
-                                <li itemprop="event" itemscope_itemtype="http://schema.org/Event" data-id="56b23f7cd5f1565045d84b2e" class="col-xs-12 col-sm-6 col-md-4 events-li product-list-widget">
-                                  <article class="event" itemprop="itemListElement">
-                                    <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week" class="image">
-                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600" data-src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600">
-                                    </a>
-                                    <div class="info event-data">
-
-                                      <h3>
-                                        <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week">Orange F.O.O.D Week</a>
-                                      </h3>
-                                      <p class="event-date">Saturday 01 April to Sunday 09 April 2017, Orange</p>
-                                      <p itemprop="description" class="prod-desc">Enjoy fine food and wine at the annual F.O.O.D. Week (Food Of Orange District). The 10-day event in April in northwest NSW showcases the region’s fresh produce, elegant wines, gourmet products, talented chefs and superb restaurants and other...</p>
-                                      <meta itemmprop="startDate" content="2017-04-01 00:00:00">
-                                      <meta itemmprop="endDate" content="2017-04-09 00:00:00">
-
-                                      <div class="date-panel double-day">
-                                        <span class="from-day">01</span>
-                                        <span class="from-month">Apr</span>
-                                        <span class="date-dash">-</span>
-                                        <span class="to-day">09</span>
-                                        <span class="to-month">Apr</span>
-                                      </div>
-                                    </div>
-                                    <aside class="aside-product-listing event">
-                                      <a class="button" href="#" data-town-distance="473" data-town-drive-time="100" data-town-latitude="-33.2813" data-town-longitude="149.098" data-area-distance="473" data-area-drive-time="100" data-area-latitude="" data-area-longitude="" data-region-distance="203344" data-region-drive-time="10628" data-region-latitude="-34.7552" data-region-longitude="149.716" data-sydney-distance="255443" data-sydney-drive-time="13222" data-sydney-latitude="-33.8688" data-sydney-longitude="151.2093">View details
-                                      </a>
-                                      <a class="button btn-visit-website ga_URL_orangefoodweek-com-au-" data-leadtype="Web" data-region="Country Nsw" data-area="Orange Area" data-town="Orange" data-product="orange-food-week" data-list-type="widget" href="#" rel="external nofollow" target="_blank">Visit website</a>
-                                    </aside>
-                                  </article>
-                                </li>
 
                                 <li itemprop="event" itemscope_itemtype="http://schema.org/Event" data-id="56b23f7cd5f1565045d84b2e" class="col-xs-12 col-sm-6 col-md-4 events-li product-list-widget">
                                   <article class="event" itemprop="itemListElement">
                                     <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week" class="image">
-                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600" data-src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600">
-                                    </a>
-                                    <div class="info event-data">
-
-                                      <h3>
-                                        <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week">Orange F.O.O.D Week</a>
-                                      </h3>
-                                      <p class="event-date">Saturday 01 April to Sunday 09 April 2017, Orange</p>
-                                      <p itemprop="description" class="prod-desc">Enjoy fine food and wine at the annual F.O.O.D. Week (Food Of Orange District). The 10-day event in April in northwest NSW showcases the region’s fresh produce, elegant wines, gourmet products, talented chefs and superb restaurants and other...</p>
-                                      <meta itemmprop="startDate" content="2017-04-01 00:00:00">
-                                      <meta itemmprop="endDate" content="2017-04-09 00:00:00">
-
-                                      <div class="date-panel double-day">
-                                        <span class="from-day">01</span>
-                                        <span class="from-month">Apr</span>
-                                        <span class="date-dash">-</span>
-                                        <span class="to-day">09</span>
-                                        <span class="to-month">Apr</span>
-                                      </div>
-                                    </div>
-                                    <aside class="aside-product-listing event">
-                                      <a class="button" href="#" data-town-distance="473" data-town-drive-time="100" data-town-latitude="-33.2813" data-town-longitude="149.098" data-area-distance="473" data-area-drive-time="100" data-area-latitude="" data-area-longitude="" data-region-distance="203344" data-region-drive-time="10628" data-region-latitude="-34.7552" data-region-longitude="149.716" data-sydney-distance="255443" data-sydney-drive-time="13222" data-sydney-latitude="-33.8688" data-sydney-longitude="151.2093">View details
-                                      </a>
-                                      <a class="button btn-visit-website ga_URL_orangefoodweek-com-au-" data-leadtype="Web" data-region="Country Nsw" data-area="Orange Area" data-town="Orange" data-product="orange-food-week" data-list-type="widget" href="#" rel="external nofollow" target="_blank">Visit website</a>
-                                    </aside>
-                                  </article>
-                                </li>
-
-                                <li itemprop="event" itemscope_itemtype="http://schema.org/Event" data-id="56b23f7cd5f1565045d84b2e" class="col-xs-12 col-sm-6 col-md-4 events-li product-list-widget">
-                                  <article class="event" itemprop="itemListElement">
-                                    <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week" class="image">
-                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600" data-src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600">
-                                    </a>
-                                    <div class="info event-data">
-
-                                      <h3>
-                                        <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week">Orange F.O.O.D Week</a>
-                                      </h3>
-                                      <p class="event-date">Saturday 01 April to Sunday 09 April 2017, Orange</p>
-                                      <p itemprop="description" class="prod-desc">Enjoy fine food and wine at the annual F.O.O.D. Week (Food Of Orange District). The 10-day event in April in northwest NSW showcases the region’s fresh produce, elegant wines, gourmet products, talented chefs and superb restaurants and other...</p>
-                                      <meta itemmprop="startDate" content="2017-04-01 00:00:00">
-                                      <meta itemmprop="endDate" content="2017-04-09 00:00:00">
-
-                                      <div class="date-panel double-day">
-                                        <span class="from-day">01</span>
-                                        <span class="from-month">Apr</span>
-                                        <span class="date-dash">-</span>
-                                        <span class="to-day">09</span>
-                                        <span class="to-month">Apr</span>
-                                      </div>
-                                    </div>
-                                    <aside class="aside-product-listing event">
-                                      <a class="button" href="#" data-town-distance="473" data-town-drive-time="100" data-town-latitude="-33.2813" data-town-longitude="149.098" data-area-distance="473" data-area-drive-time="100" data-area-latitude="" data-area-longitude="" data-region-distance="203344" data-region-drive-time="10628" data-region-latitude="-34.7552" data-region-longitude="149.716" data-sydney-distance="255443" data-sydney-drive-time="13222" data-sydney-latitude="-33.8688" data-sydney-longitude="151.2093">View details
-                                      </a>
-                                      <a class="button btn-visit-website ga_URL_orangefoodweek-com-au-" data-leadtype="Web" data-region="Country Nsw" data-area="Orange Area" data-town="Orange" data-product="orange-food-week" data-list-type="widget" href="#" rel="external nofollow" target="_blank">Visit website</a>
-                                    </aside>
-                                  </article>
-                                </li>
-
-                                <li itemprop="event" itemscope_itemtype="http://schema.org/Event" data-id="56b23f7cd5f1565045d84b2e" class="col-xs-12 col-sm-6 col-md-4 events-li product-list-widget">
-                                  <article class="event" itemprop="itemListElement">
-                                    <a href="/destinations/country-nsw/orange-area/orange/events/orange-food-week" class="image">
-                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600" data-src="https://assets.atdw-online.com.au/images/Original__9751710_2800_IMG_8667_rya1jx8.JPG?rect=0,855,2280,1710&amp;w=800&amp;h=600">
+                                      <img class="img-responsive img-unveil" alt="" src="https://assets.atdw-online.com.au/images/ff6b78246114cd186a812ded9ef40716.jpeg?rect=166,0,2668,2001&w=800&h=600" data-src="https://assets.atdw-online.com.au/images/ff6b78246114cd186a812ded9ef40716.jpeg?rect=166,0,2668,2001&w=800&h=600">
                                     </a>
                                     <div class="info event-data">
 
