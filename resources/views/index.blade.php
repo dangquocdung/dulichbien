@@ -21,6 +21,7 @@
                       @include('layouts.seasonal')
                       @include('layouts.event')
                       @include('layouts.hoatdong')
+                      @include('layouts.video')
                     </div>
                   </div>
                 </div>
@@ -46,7 +47,7 @@
 <script type="text/javascript">
   $('.owl-carousel').owlCarousel({
       loop:true,
-      margin:10,
+      margin:100,
       nav:true,
       responsive:{
           0:{
