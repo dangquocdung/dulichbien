@@ -38,7 +38,7 @@
                   <article class="media media-image view-mode-seasonal-tiles">
                     <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                       <picture>
-                        <img srcset="./upload/food-and-wine.jpg" alt="Đồ ăn - Thức uống" title="Đồ ăn - Thức uống" typeof="foaf:Image" class="img-responsive img-unveil">
+                        <img srcset="./upload/food-and-wine.jpg" alt="Thức ăn - Đồ uốngg" title="Thức ăn - Đồ uống" typeof="foaf:Image" class="img-responsive img-unveil">
                       </picture>
                     </div>
                   </article>
@@ -46,7 +46,7 @@
               </a>
               <div class="seasonal-wrapper" onclick="">
                 <h2 class="tile-heading">
-                  <a href="#" title="Đồ ăn - Thức uống">Đồ ăn - Thức uống</a>
+                  <a href="#" title="Thức ăn - Đồ uống">Thức ăn - Đồ uống</a>
                 </h2>
 
               </div>

@@ -3,7 +3,7 @@
 
     <div class="content">
       <h2 class="tiles-container-heading">
-        <a title="Things to do" href="http://int.sydney.com/things-to-do">Hoạt động</a>
+        <a title="Things to do" href="http://int.sydney.com/things-to-do">Hoạt động khác</a>
       </h2>
       <div class="field field--name-field-tiles field--type-entity-reference field--label-hidden _columns-things-to-do field--items">
         <div class="field--item">
