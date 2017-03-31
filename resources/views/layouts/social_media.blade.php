@@ -18,7 +18,7 @@
 </ul></div>
 
 <div class="child-footer col-sm-12 col-md-6">
-<form action="#" class="newsletter-form" method="post"><label for="escapes-newsletter">Newsletter</label> <input id="escapes-newsletter" name="email" placeholder="Your Email" title="Enter your Email" type="email"><span class="submit-wrapper"><button class="btn btn-newsletter">Sign up</button></span></form>
+<form action="#" class="newsletter-form" method="post"><label for="escapes-newsletter">Nhận bản tin</label> <input id="escapes-newsletter" name="email" placeholder="Your Email" title="Enter your Email" type="email"><span class="submit-wrapper"><button class="btn btn-newsletter">Sign up</button></span></form>
 </div>
 </div>
 
