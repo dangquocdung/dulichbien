@@ -21,7 +21,7 @@
                       @include('layouts.seasonal')
                       @include('layouts.event')
                       @include('layouts.hoatdong')
-                      @include('layouts.video')
+                      {{-- @include('layouts.video') --}}
                     </div>
                   </div>
                 </div>
@@ -60,7 +60,7 @@
               items:5
           }
       }
-  })
+  });
 
 </script>
 </body>

@@ -98,7 +98,7 @@
               </a>
               <div class="seasonal-wrapper" onclick="">
                 <h2 class="tile-heading">
-                  <a href="#" title="Làm việc -Vui chơi - Học hỏi">Làm việc -Vui chơi - Học hỏi</a>
+                  <a href="#" title="Làm việc -Vui chơi - Học hỏi">Làm việc -Vui chơi - Học tập</a>
                 </h2>
 
               </div>

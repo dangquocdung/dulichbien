@@ -14,26 +14,7 @@
           <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
             <img src="/images/bien-ha-tinh.png" alt="Home" width="100px">
           </a>
-          <div class="search-block-form block block-search" data-drupal-selector="search-block-form" id="block-searchform" role="search">
-            <h2 class="visually-hidden">Search form</h2>
-
-            <span class="placeholder"></span>
-            <form action="/search/site" method="get" id="search-block-form" accept-charset="UTF-8" style="display: none;">
-              <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
-                <label for="edit-keys" class="control-label sr-only">Search</label>
-                <div class="input-group">
-                  <input title="" data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" data-toggle="tooltip" required="" pattern=".{1,}" data-original-title="Enter the terms you wish to search for.">
-                  <span class="input-group-btn">
-                    <button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only" name="">
-                      <span class="sr-only">Search</span>
-                      <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
-                    </button>
-                  </span>
-                </div>
-              </div>
-              <div class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions"></div>
-            </form>
-          </div>
+          
 
         </div>
       </div>

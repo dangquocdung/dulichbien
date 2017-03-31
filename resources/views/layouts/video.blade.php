@@ -5,7 +5,7 @@
         <a title="Deals &amp; Packages" href="#">VIDEO</a>
       </h2>
       <div class="deals-gallery">
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel-2 owl-theme">
             <div class="item">
               <iframe src="https://www.youtube.com/embed/DqTo2Cl1mtQ" frameborder="0" allowfullscreen></iframe>
             </div>
