@@ -75,8 +75,9 @@
 
 
 
-<div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p class="copyright">Dulichbien.hatinh.top là trang quảng bá du lịch biển chính thức của Sở TT-TT tỉnh Hà Tĩnh.<br>
-© Trang tin được thực hiện vào năm 2017 bởi <a href="http://ttcntt.hatinh.gov.vn" target="_blank">Đặng Quốc Dũng</a>.</p>
+<div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p class="copyright">&reg; dulichbien.hatinh.top là trang quảng bá du lịch biển chính thức của tỉnh Hà Tĩnh.<br>
+Chịu trách nhiệm nội dung: Mr. Phan Tấn Linh - Giám đốc Sở TT-TT Hà Tĩnh.<br>
+© 2017 bởi <a href="http://ttcntt.hatinh.gov.vn" target="_blank">Đặng Quốc Dũng</a>.</p>
 </div>
 
 </section>
