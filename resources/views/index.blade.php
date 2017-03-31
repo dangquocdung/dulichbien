@@ -49,12 +49,7 @@
 
 <header class="navbar yamm dnsw-mega-menu-deluxe navbar-offcanvas-touch offcanvas-transform navbar-offcanvas navbar-default container" id="navbar" role="banner">
       <div class="navbar-header">
-          <button type="button" class="navbar-toggle offcanvas-toggle js-offcanvas-has-events" data-toggle="offcanvas" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          
             <div role="heading" class="container top-header col-xs-8 col-sm-12 pull-right">
               <div class="">
                 <div class="region region-header">
