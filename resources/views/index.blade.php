@@ -107,14 +107,14 @@
                   <div class="item image-slider active" data-slide-to="0">
                     <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                       <picture>
-                        <img srcset="http://int.sydney.com/sites/default/files/styles/header_slider/public/2016-12/Sydney-Harbour.jpg?itok=QmFhEdGP" alt="Sydney Harbour" title="Sydney Harbour" typeof="foaf:Image" class="img-responsive img-unveil">
+                        <img srcset="./public/upload/bien-ha-tinh-buoi-sang.jpg" alt="Bình minh trên biển" title="Bình minh trên biển" typeof="foaf:Image" class="img-responsive img-unveil">
                       </picture>
                     </div>
                   </div>
                   <div class="item image-slider" data-slide-to="1">
                     <div class="field field--name-field-image field--type-image field--label-hidden field--item">
                       <picture>
-                        <img srcset="http://int.sydney.com/sites/default/files/styles/header_slider/public/2016-12/Sydney-Harbour-Bridge.jpg?itok=lPEHJE0u" alt="Sydney Harbour Bridge" title="Sydney Harbour Bridge" typeof="foaf:Image" class="img-responsive img-unveil">
+                        <img srcset="./public/upload/hoang-hon-tren-bien.jpg" alt="Hoàng hôn trên biển" title="Hoàng hôn trên biển" typeof="foaf:Image" class="img-responsive img-unveil">
                       </picture>
                     </div>
                   </div>
@@ -125,7 +125,7 @@
                     <div class="carousel-caption size2">
                       <div class="note-box">
                         <div class="icon icon-only fa fa-info"></div>
-                        <div class="popup">Sydney Harbour</div>
+                        <div class="popup">Bình minh trên biển</div>
                       </div>
                     </div>
                   </li>
@@ -134,7 +134,7 @@
                     <div class="carousel-caption size2">
                       <div class="note-box">
                         <div class="icon icon-only fa fa-info"></div>
-                        <div class="popup">Sydney Harbour Bridge</div>
+                        <div class="popup">Hoàng hôn trên biển</div>
                       </div>
                     </div>
                   </li>
