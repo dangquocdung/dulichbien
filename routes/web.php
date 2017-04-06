@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/khach-san', function () {
+    return view('khach-san');
+});
+
+Route::get('/khach-san/chi-tiet', function () {
+    return view('chi-tiet');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
