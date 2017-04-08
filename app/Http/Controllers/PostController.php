@@ -25,7 +25,7 @@ class PostController extends Controller
      {
          $this->middleware('auth');
 
-         $chuyenmuc = MenuTop::orderby('id','asc')->get();
+         $chuyenmuc = MenuTop::orderby('thutu','asc')->get();
          view()->share('chuyenmuc',$chuyenmuc);
 
      }

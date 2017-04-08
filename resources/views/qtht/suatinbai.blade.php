@@ -16,7 +16,7 @@
                   <label>Loại tin</label>
                   <select class="form-control" name="loaitin_id" required="">
                     @foreach ($chuyenmuc as $cm)
-                      @if ($cm->id < 3 || $cm->id == 4)
+
                         @foreach ($cm->loaitin as $lt)
                           @if ($tintuc->loaitin_id == $lt->id )
                             <option value="{{ $lt->id}}" selected="">{{ $lt->menutop->ten}} | {{ $lt->ten}}</option>
@@ -24,7 +24,7 @@
                             <option value="{{ $lt->id}}">{{ $lt->menutop->ten}} | {{ $lt->ten}}</option>
                           @endif
                         @endforeach
-                      @endif
+
                     @endforeach
                   </select>
                 </div>
@@ -70,13 +70,13 @@
               </div>
 
               <div class="modal-footer">
-                @if ( $tintuc->user_id == Auth::user()->id )
+                @if ( Auth::user()->is_admin() )
                   <input type="submit" name="capnhat" value="Cập nhật" class="btn btn-success" >
+                  <input type="submit" name="duyetdang" value="Duyệt Đăng" class="btn btn-primary" >
                 @elseif ( Auth::user()->is_tbbt() )
                   <input type="submit" name="duyetdang" value="Duyệt Đăng" class="btn btn-primary" >
-                @elseif (Auth::user()->is_admin() )
+                @elseif ( $tintuc->user_id == Auth::user()->id )
                   <input type="submit" name="capnhat" value="Cập nhật" class="btn btn-success" >
-                  <input type="submit" name="duyetdang" value="Duyệt Đăng" class="btn btn-primary" >
                 @endif
               </div>
               {!! Form::close() !!}
