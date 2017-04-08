@@ -16,6 +16,10 @@
             <p><span class="glyphicon glyphicon-time"></span> {{ Carbon\Carbon::parse($tin->created_at)->format('d-m-Y h:m:s') }}</p>
           </div>
 
+          <div class="hinh-minh-hoa">
+            <img src="{{ $tin->urlhinh }}" alt="{{ $tin->tieude }}">
+          </div>
+
           <hr>
           <div class="news-desc">
             <p>{{ $tin->tomtat }}</p>
