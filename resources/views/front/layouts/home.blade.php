@@ -65,7 +65,11 @@
 
                             @foreach ($mt->loaitin as $lt)
                               <div class="col-sm-3">
-                                <div class="thumbnail"><img alt="260x130" src="{{ $lt->hinh }}">
+                                <div class="thumbnail">
+                                  <a href="/loai-tin/{{ $lt->slug }}">
+                                    <img alt="260x130" src="{{ $lt->hinh }}">
+                                  </a>
+
                                   <div class="caption">
                                     <h4>{{ $lt->ten }}</h4>
                                     <p>{{ $lt->ghichu }}</p>
