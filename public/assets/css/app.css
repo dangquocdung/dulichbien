@@ -8216,5 +8216,8 @@ table tr td {
   height: 250px;
   width: 100%; }
 
+.thumbnail .caption {
+  text-align: center; }
+
 
 /*# sourceMappingURL=app.css.map */
