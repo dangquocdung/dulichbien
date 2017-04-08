@@ -11,19 +11,132 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', ['as' => '/', 'uses' => 'FrontController@getHome']);
 
-Route::get('/khach-san', function () {
-    return view('khach-san');
-});
+Route::get('/lich-cong-tac', 'FrontController@lichCongTac');
 
-Route::get('/khach-san/chi-tiet', function () {
-    return view('chi-tiet');
-});
 
+Route::get('/user/activation/{token}', 'Auth\RegisterController@userActivation');
+
+// Route::get('/gioi-thieu/{id}-{tenkhongdau}', ['as' => 'gioi-thieu', 'uses' => 'FrontController@getGioiThieu']);
+
+// Route::group(['prefix'=>'front'],function(){
+//
+//   Route::get('/{menutop}/{loaitin}/{id}-{tieudekhongdau}','FrontController@getChiTietTin');
+//
+//   Route::get('/{menutop}/{id}-{loaitin}','FrontController@getLoaiTin');
+//
+// });
+Route::get('/loai-tin/{slug}', 'FrontController@getLoaiTin');
+
+Route::get('/chi-tiet-tin/{slug}', 'FrontController@getChiTietTin');
+
+Route::get('/van-ban/{slug}', 'FrontController@getVanBan');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+
+Route::group(['prefix'=>'qtht'],function(){
+
+
+  Route::resource('/', 'PostController');
+  Route::get('/home', 'PostController@index');
+
+  Route::get('/them-tin-bai', 'PostController@create');
+  Route::post('/them-tin-bai', 'PostController@store');
+
+  Route::get('/sua-tin-bai/{slug}', 'PostController@edit');
+  Route::post('/sua-tin-bai','PostController@update');
+
+  Route::get('/xoa-tin-bai/{id}', 'PostController@destroy');
+
+  Route::get('/chi-tiet-tin/{slug}', 'PostController@show');
+
+
+  Route::group(['prefix'=>'menu'],function(){
+
+    Route::resource('/', 'MenuController');
+
+    Route::get('/home', 'MenuController@index');
+
+    Route::get('/them-loai-tin', 'MenuController@create');
+    Route::post('/them-loai-tin', 'MenuController@store');
+
+    Route::get('/sua-loai-tin/{slug}', 'MenuController@edit');
+    Route::post('/sua-loai-tin','MenuController@update');
+
+    Route::get('/xoa-loai-tin/{id}', 'MenuController@destroy');
+
+  });
+
+  Route::group(['prefix'=>'chuyen-muc'],function(){
+
+    Route::resource('/', 'ChuyenMucController');
+
+    Route::get('/home', 'ChuyenMucController@index');
+    Route::get('/them-chuyen-muc', 'ChuyenMucController@create');
+    Route::post('/them-chuyen-muc', 'ChuyenMucController@store');
+
+    Route::get('/sua-chuyen-muc/{slug}', 'ChuyenMucController@edit');
+    Route::post('/sua-chuyen-muc','ChuyenMucController@update');
+
+    Route::get('/xoa-chuyen-muc/{id}', 'ChuyenMucController@destroy');
+
+
+  });
+
+  Route::group(['prefix'=>'hinh-slide'],function(){
+
+    Route::resource('/', 'HinhSlideController');
+
+    Route::get('/home', 'HinhSlideController@index');
+
+    Route::get('/them-hinh-slide', 'HinhSlideController@create');
+
+    Route::post('/them-hinh-slide', 'HinhSlideController@store');
+
+    Route::get('/sua-hinh-slide/{id}', 'HinhSlideController@edit');
+    Route::post('/sua-hinh-slide','HinhSlideController@update');
+
+    Route::get('/xoa-hinh-slide/{id}', 'HinhSlideController@destroy');
+
+
+  });
+
+  Route::group(['prefix'=>'lich-cong-tac'],function(){
+
+    Route::resource('/', 'LichCongTacController');
+
+    Route::get('/home', 'LichCongTacController@index');
+
+    Route::get('/them-lich-cong-tac', 'LichCongTacController@create');
+
+    Route::post('/them-lich-cong-tac', 'LichCongTacController@store');
+
+    Route::get('/sua-lich-cong-tac/{id}', 'LichCongTacController@edit');
+
+    Route::post('/sua-lich-cong-tac','LichCongTacController@update');
+
+    Route::get('/xoa-lich-cong-tac/{id}', 'LichCongTacController@destroy');
+
+  });
+
+  Route::group(['prefix'=>'van-ban'],function(){
+
+    Route::resource('/', 'VanBanController');
+
+    Route::get('/home', 'VanBanController@index');
+
+    Route::get('/them-van-ban', 'VanBanController@create');
+
+    Route::post('/them-van-ban', 'VanBanController@store');
+
+    Route::get('/sua-van-ban/{slug}', 'VanBanController@edit');
+
+    Route::post('/sua-van-ban','VanBanController@update');
+
+    Route::get('/xoa-van-ban/{id}', 'VanBanController@destroy');
+
+  });
+
+});

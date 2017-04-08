@@ -26,4 +26,50 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function can_post(){
+      $level = $this->level;
+
+      if ($level == 2){
+        return true;
+      }
+
+      return false;
+    }
+
+    public function is_tbbt(){
+      $level = $this->level;
+
+      if ($level == 3){
+        return true;
+      }
+
+      return false;
+    }
+
+    public function is_admin(){
+      $level = $this->level;
+
+      if ($level == 15){
+        return true;
+      }
+
+      return false;
+    }
+
+    public function is_activated(){
+
+      $activated = $this->is_activated;
+
+      if ($activated == 1){
+        return true;
+      }
+
+      return false;
+
+    }
+
+    public function posts(){
+      return $this->hasMany('App\TinTuc','user_id');
+    }
 }

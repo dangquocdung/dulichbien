@@ -12,7 +12,13 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Du lịch Biển Hà Tĩnh 2017',
+    'name' => 'Chuyên Trang Du lịch Biển Hà Tĩnh',
+    'diachi' => 'Sở Thông Tin - Truyền Thông Hà Tĩnh',
+    'dienthoai' => '(0239) 88888888',
+    'email' => 'dulichbien@hatinh.gov.vn',
+    'cio' => 'Phan Tấn Linh',
+    'brand' => 'dulichbien',
+    'toado' => '18.335534, 105.906581',
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Ho_Chi_Minh',
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'vi',
 
     /*
     |--------------------------------------------------------------------------
@@ -90,7 +96,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'vi',
 
     /*
     |--------------------------------------------------------------------------
@@ -176,6 +182,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Kryptonit3\Counter\CounterServiceProvider::class,
 
     ],
 
@@ -225,6 +233,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Counter' => Kryptonit3\Counter\Facades\CounterFacade::class,
+
 
     ],
 
