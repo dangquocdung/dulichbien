@@ -1,0 +1,58 @@
+@extends('front.layouts.home')
+@section('content')
+
+<div class="row">
+
+    @foreach ($menutop as $mt)
+
+        <div class="list-group">
+          <a class="list-group-item active main-color-bg" href="/loai-tin/{{ $mt->slug }}">
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> {{ $mt->ten }}
+          </a>
+          <div class="list-group-item" style="padding-bottom:0px; padding-left:0px; padding-right:0px; overflow:hidden">
+            <div class="row">
+
+              @php
+                $data = $mt->tintuc->sortByDesc('created_at')->take(5);
+                $tin1 = $data->shift();
+              @endphp
+
+              <div class="col-md-8 col-xs-12">
+                <div class="col-md-5 minhhoa">
+                  <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
+                      <img src="{{ $tin1['urlhinh'] }}" alt="" style="max-height:150px;">
+                  </a>
+                </div>
+                <div class="col-md-7">
+                  <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
+                    <h4>
+                      {{ $tin1['tieude'] }}
+                    </h4>
+                  </a>
+                  <div class="news-desc">
+                    {{ $tin1['tomtat'] }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                @foreach ($data as $tt)
+                  <a href="/chi-tiet-tin/{{ $tt->tieudekhongdau}}">
+                    <h5>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      {{ $tt->tieude }}
+                    </h5>
+                  </a>
+                @endforeach
+              </div>
+            </div>
+            <div class="footer-mega-link">
+              <a href="/loai-tin/{{ $mt->slug }}"><small>Nhiều hơn...</small></a>
+            </div>
+          </div>
+        </div>
+
+  @endforeach
+
+</div>
+@endsection
