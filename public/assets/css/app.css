@@ -8142,6 +8142,11 @@ input[type="file"] {
   font-weight: bold;
   font-style: italic; }
 
+.hinh-minh-hoa img {
+  padding: 5px;
+  display: block;
+  margin: 0 auto; }
+
 table tr th {
   text-align: center;
   /* center checkbox horizontally */
