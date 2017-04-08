@@ -8119,8 +8119,7 @@ input[type="file"] {
   color: #333; }
 
 .list-group .list-group-item .tintuc {
-  padding-right: 10px;
-  padding-bottom: 20px; }
+  padding-right: 10px; }
   .list-group .list-group-item .tintuc h4 {
     text-align: center; }
   .list-group .list-group-item .tintuc .minhhoa {
@@ -8128,8 +8127,7 @@ input[type="file"] {
     display: block;
     margin: 0 auto; }
   .list-group .list-group-item .tintuc .news-desc {
-    text-align: justify;
-    text-indent: 30px; }
+    text-align: justify; }
 
 .list-group .list-group-item .chi-tiet-tin h3 {
   text-align: center; }

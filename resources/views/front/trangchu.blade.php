@@ -13,14 +13,14 @@
             <div class="row">
 
               @php
-                $data = $mt->tintuc->sortByDesc('created_at')->take(5);
+                $data = $mt->tintuc->where('active','1')->sortByDesc('created_at')->take(5);
                 $tin1 = $data->shift();
               @endphp
 
-              <div class="col-md-8 col-xs-12">
+              <div class="col-md-8 col-xs-12 tintuc">
                 <div class="col-md-5 minhhoa">
                   <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
-                      <img src="{{ $tin1['urlhinh'] }}" alt="" style="max-height:150px;">
+                      <img src="{{ $tin1['urlhinh'] }}" alt="" width="100%">
                   </a>
                 </div>
                 <div class="col-md-7">

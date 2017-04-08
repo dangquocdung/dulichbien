@@ -15,11 +15,11 @@
                   <select class="form-control" name="loaitin_id" required="">
 
                     @foreach ($chuyenmuc as $cm)
-                      @if ($cm->id < 3 || $cm->id == 4)
+
                         @foreach ($cm->loaitin as $lt)
                         <option value="{{ $lt->id}}">{{ $lt->menutop->ten}} | {{ $lt->ten}}</option>
                         @endforeach
-                      @endif
+                      
                     @endforeach
                   </select>
                 </div>

@@ -13,9 +13,7 @@
           <h3>{{ $tin->tieude }}</h3>
           <div class="thong-tin">
             <p>người đăng <strong>{{ $tin->nguoidang->name }}</strong></p>
-            <p><span class="glyphicon glyphicon-time"></span> {{ $tin->created_at }}</p>
-
-
+            <p><span class="glyphicon glyphicon-time"></span> {{ Carbon\Carbon::parse($tin->created_at)->format('d-m-Y h:m:s') }}</p>
           </div>
 
           <hr>
