@@ -2,7 +2,7 @@
 @section('content')
   <div class="row">
     @php
-      $data = $chuyenmuc->tintuc->where('active','1')->sortByDesc('created_at')->take(5);
+      $data = $chuyenmuc->tintuc->where('active','1')->sortByDesc('created_at')->take(12);
     @endphp
     <div class="list-group">
       <a  class="list-group-item active main-color-bg">
