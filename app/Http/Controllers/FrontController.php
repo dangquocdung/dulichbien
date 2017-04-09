@@ -56,6 +56,15 @@ class FrontController extends Controller
       return view('front.loaitin',['tintheoloai'=>$tintheoloai,'loaitin2'=>$loaitin]);
   }
 
+  public function postTimKiem(Request $request)
+  {
+
+    $search = $request->get('search');
+    $posts = TinTuc::where('tieude','like','%'.$search.'%')->orderBy('created_at')->paginate(10);
+
+    return view('front.timkiem',['posts'=>$posts, 'search'=>$search]);
+  }
+
   public function getChiTietTin($slug)
   {
     $tintuc = TinTuc::where('tieudekhongdau',$slug)->first();

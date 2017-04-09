@@ -21,18 +21,8 @@
               </a>
               <p>{{ $ttl->tomtat }}</p>
               <a class="btn btn-primary" href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">Chi tiết... <span class="glyphicon glyphicon-chevron-right"></span></a>
-
             </div>
           </div>
-
-
-
-
-
-
-
-
-
         </div>
       @endforeach
     </div>
