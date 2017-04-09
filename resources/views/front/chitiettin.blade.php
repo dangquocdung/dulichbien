@@ -17,7 +17,7 @@
           </div>
 
           <div class="hinh-minh-hoa">
-            <img src="{{ $tin->urlhinh }}" alt="{{ $tin->tieude }}">
+            <img src="{{ $tin->urlhinh }}" alt="{{ $tin->tieude }}" class="img-responsive">
           </div>
 
           <hr>
