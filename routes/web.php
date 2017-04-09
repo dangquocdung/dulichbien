@@ -33,6 +33,9 @@ Route::get('/chi-tiet-tin/{slug}', 'FrontController@getChiTietTin');
 
 Route::get('/van-ban/{slug}', 'FrontController@getVanBan');
 
+Route::post('/tim-kiem', 'FrontController@postTimKiem');
+
+
 Auth::routes();
 
 

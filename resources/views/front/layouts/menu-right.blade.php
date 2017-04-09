@@ -1,8 +1,9 @@
 
 <div class="list-group">
-  {!! Form::open(['method'=>'GET', 'ulr'=>'tim-kiem', 'class'=>'list-group-item','role'=>'search']) !!}
+  {!! Form::open(['method'=>'POST', 'url'=>'/tim-kiem', 'class'=>'list-group-item','role'=>'search']) !!}
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Tìm kiếm thông tin...">
+      <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+      <input type="text" class="form-control" name="search" placeholder="Tìm kiếm thông tin...">
       <div class="input-group-btn">
         <button class="btn btn-default" type="submit">
           <i class="glyphicon glyphicon-search"></i>
