@@ -6,7 +6,7 @@
     @foreach ($menutop as $mt)
 
         <div class="list-group">
-          <a class="list-group-item active main-color-bg" href="/loai-tin/{{ $mt->slug }}">
+          <a class="list-group-item active main-color-bg" href="/chuyen-muc/{{ $mt->slug }}">
             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> {{ $mt->ten }}
           </a>
           <div class="list-group-item" style="padding-bottom:0px; padding-left:0px; padding-right:0px; overflow:hidden">
@@ -47,7 +47,7 @@
               </div>
             </div>
             <div class="footer-mega-link">
-              <a href="/loai-tin/{{ $mt->slug }}"><small>Nhiều hơn...</small></a>
+              <a href="/chuyen-muc/{{ $mt->slug }}"><small>Nhiều hơn...</small></a>
             </div>
           </div>
         </div>

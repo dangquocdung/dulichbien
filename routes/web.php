@@ -27,6 +27,9 @@ Route::get('/user/activation/{token}', 'Auth\RegisterController@userActivation')
 //   Route::get('/{menutop}/{id}-{loaitin}','FrontController@getLoaiTin');
 //
 // });
+
+Route::get('/chuyen-muc/{slug}', 'FrontController@getChuyenMuc');
+
 Route::get('/loai-tin/{slug}', 'FrontController@getLoaiTin');
 
 Route::get('/chi-tiet-tin/{slug}', 'FrontController@getChiTietTin');
