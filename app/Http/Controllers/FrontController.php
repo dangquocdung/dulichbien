@@ -48,18 +48,14 @@ class FrontController extends Controller
 
   public function getChuyenMuc($slug)
   {
-
       $chuyenmuc = MenuTop::where('slug',$slug)->first();
       return view('front.chuyenmuc',['chuyenmuc'=>$chuyenmuc]);
   }
 
   public function getLoaiTin($slug)
   {
-
       $loaitin = LoaiTin::where('slug',$slug)->first();
-
       $tintheoloai = TinTuc::where('loaitin_id',$loaitin->id)->orderby('created_at','desc')->paginate(12);
-
       return view('front.loaitin',['tintheoloai'=>$tintheoloai,'loaitin2'=>$loaitin]);
   }
 
@@ -82,7 +78,6 @@ class FrontController extends Controller
   {
 
       $loaitin = LoaiTin::where('slug',$slug)->first();
-
       $vbtheoloai = VanBan::where('loaitin_id',$loaitin->id)->orderby('created_at','desc')->paginate(12);
 
       return view('front.vanbantheoloaitin',['vbtheoloai'=>$vbtheoloai,'loaitin3'=>$loaitin]);
