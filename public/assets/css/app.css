@@ -8222,5 +8222,9 @@ table tr td {
 .thumbnail .caption {
   text-align: center; }
 
+.thumbnail a img {
+  width: 260px;
+  height: 133px; }
+
 
 /*# sourceMappingURL=app.css.map */
