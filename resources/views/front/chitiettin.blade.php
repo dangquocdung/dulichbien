@@ -32,4 +32,76 @@
     </div>
 
   </div><!--/row-->
+
+  <hr>
+
+  {{-- tin moi nhat --}}
+
+  <div class="row">
+    <div class="list-group">
+      <a  class="list-group-item active main-color-bg">
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Tin mới nhất
+      </a>
+      @foreach ($namtinmoinhat as $ttl)
+        <div class="list-group-item">
+          <div class="row">
+            <div class="col-md-3 hinh-minh-hoa">
+                @if ($ttl->urlhinh)
+                  <img class="img-responsive" src="{{ $ttl->urlhinh }}" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
+                @else
+                  <img class="img-responsive" src="http://placehold.it/150x150" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
+                @endif
+            </div>
+            <div class="col-md-9">
+              <a href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">
+                <h4>{{ $ttl->tieude }}</h4>
+              </a>
+              <p>{{ $ttl->tomtat }}</p>
+              <a class="btn btn-primary" href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">Chi tiết... <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+            </div>
+          </div>
+        </div>
+      @endforeach
+    </div>
+  </div>
+  <!--/row-->
+
+  {{-- tin cùng loại --}}
+
+  @php
+
+    $namtincungloai  = $loaitinchitiet->tintuc->where('active','1')->sortByDesc('created_at')->take(5);
+
+  @endphp
+
+  <div class="row">
+    <div class="list-group">
+      <a  class="list-group-item active main-color-bg">
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Tin cùng loại
+      </a>
+      @foreach ($namtincungloai as $ttl)
+        <div class="list-group-item">
+          <div class="row">
+            <div class="col-md-3 hinh-minh-hoa">
+                @if ($ttl->urlhinh)
+                  <img class="img-responsive" src="{{ $ttl->urlhinh }}" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
+                @else
+                  <img class="img-responsive" src="http://placehold.it/150x150" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
+                @endif
+            </div>
+            <div class="col-md-9">
+              <a href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">
+                <h4>{{ $ttl->tieude }}</h4>
+              </a>
+              <p>{{ $ttl->tomtat }}</p>
+              <a class="btn btn-primary" href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">Chi tiết... <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+            </div>
+          </div>
+        </div>
+      @endforeach
+    </div>
+  </div>
+  <!--/row-->
 @endsection

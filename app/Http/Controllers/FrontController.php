@@ -32,6 +32,10 @@ class FrontController extends Controller
     $vanban = VanBan::orderby('created_at','desc')->get();
     view()->share('vanban',$vanban);
 
+    $namtinmoinhat = TinTuc::orderby('id','desc')->limit(5)->get();
+    view()->share('namtinmoinhat',$namtinmoinhat);
+
+
   }
 
   public function getHome()
@@ -70,8 +74,9 @@ class FrontController extends Controller
 
   public function getChiTietTin($slug)
   {
-    $tintuc = TinTuc::where('tieudekhongdau',$slug)->first();
-    return view('front.chitiettin',['tin'=>$tintuc]);
+    $tintuc = TinTuc::where('active','1')->where('tieudekhongdau',$slug)->first();
+    $loaitinchitiet = LoaiTin::find($tintuc->loaitin_id);
+    return view('front.chitiettin',['tin'=>$tintuc,'loaitinchitiet'=>$loaitinchitiet]);
   }
 
   public function getVanBan($slug)
