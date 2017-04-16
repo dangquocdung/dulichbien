@@ -18,12 +18,12 @@
               @endphp
 
               <div class="col-md-7 col-sm-7 col-xs-12 tintuc">
-                <div class="col-md-5 minhhoa">
+                <div class="col-md-5 col-sm-5 minhhoa">
                   <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
                       <img src="{{ $tin1['urlhinh'] }}" alt="" width="100%">
                   </a>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 col-sm-7">
                   <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
                     <h4>
                       {{ $tin1['tieude'] }}
