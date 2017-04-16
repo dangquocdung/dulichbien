@@ -8,14 +8,14 @@
       @foreach ($tintheoloai as $ttl)
         <div class="list-group-item">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-5 col-xs-5">
               <a href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">
                 <img width="200px" height="200px" class="img-responsive" src="{{ $ttl->urlhinh }}" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
               </a>
 
             </div>
 
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-7 col-xs-7">
               <a href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">
                 <h4>{{ $ttl->tieude }}</h4>
               </a>

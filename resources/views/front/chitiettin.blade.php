@@ -45,18 +45,20 @@
       @foreach ($namtinmoinhat as $ttl)
         <div class="list-group-item">
           <div class="row">
-            <div class="col-md-3 hinh-minh-hoa">
+            <div class="col-md-3 col-sm-5 col-xs-5 hinh-minh-hoa">
                 @if ($ttl->urlhinh)
                   <img class="img-responsive" src="{{ $ttl->urlhinh }}" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
                 @else
                   <img class="img-responsive" src="http://placehold.it/150x150" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
                 @endif
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-7 col-xs-7">
               <a href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">
                 <h4>{{ $ttl->tieude }}</h4>
               </a>
-              <p>{{ $ttl->tomtat }}</p>
+              <div class="hidden-xs">
+                <p>{{ $ttl->tomtat }}</p>
+              </div>
               <a class="btn btn-primary" href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">Chi tiết... <span class="glyphicon glyphicon-chevron-right"></span></a>
 
             </div>
@@ -83,18 +85,21 @@
       @foreach ($namtincungloai as $ttl)
         <div class="list-group-item">
           <div class="row">
-            <div class="col-md-3 hinh-minh-hoa">
+            <div class="col-md-3 col-sm-5 col-xs-5 hinh-minh-hoa">
                 @if ($ttl->urlhinh)
                   <img class="img-responsive" src="{{ $ttl->urlhinh }}" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
                 @else
                   <img class="img-responsive" src="http://placehold.it/150x150" alt="{{ $ttl->tieude }}" title="{{ $ttl->tieude }}">
                 @endif
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-7 col-xs-7">
               <a href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">
                 <h4>{{ $ttl->tieude }}</h4>
               </a>
-              <p>{{ $ttl->tomtat }}</p>
+              <div class="hidden-xs">
+                <p>{{ $ttl->tomtat }}</p>
+              </div>
+
               <a class="btn btn-primary" href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">Chi tiết... <span class="glyphicon glyphicon-chevron-right"></span></a>
 
             </div>
