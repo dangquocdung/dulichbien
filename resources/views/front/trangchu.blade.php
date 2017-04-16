@@ -36,7 +36,11 @@
               </div>
 
               <div class="col-md-5 col-xs-12">
+                <div class="container">
+
+
                 @foreach ($data as $tn)
+                  <div class="row">
 
                   <div class="tin-moi">
                     <table>
@@ -46,6 +50,7 @@
                       </tr>
                     </table>
                   </div>
+                  </div>
 
                   {{-- <a href="/chi-tiet-tin/{{ $tt->tieudekhongdau}}">
                     <h5>
@@ -54,6 +59,7 @@
                     </h5>
                   </a> --}}
                 @endforeach
+                </div>
               </div>
             </div>
             <div class="footer-mega-link">
