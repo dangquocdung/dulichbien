@@ -40,7 +40,7 @@
   <div class="row">
     <div class="list-group">
       <a  class="list-group-item active main-color-bg">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Tin mới nhất
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Các tin mới đăng
       </a>
       @foreach ($namtinmoinhat as $ttl)
         <div class="list-group-item">
@@ -78,7 +78,7 @@
   <div class="row">
     <div class="list-group">
       <a  class="list-group-item active main-color-bg">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Tin cùng loại
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Các tin cùng loại
       </a>
       @foreach ($namtincungloai as $ttl)
         <div class="list-group-item">
