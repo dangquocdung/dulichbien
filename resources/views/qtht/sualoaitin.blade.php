@@ -7,7 +7,7 @@
           <div class="panel-heading"><strong>Sửa Loại tin</strong></div>
 
           <div class="panel-body">
-            {!! Form::open(['method'=>'POST','url'=>'qtht/menu/sua-loai-tin', 'enctype'=>'multipart/form-data']) !!}
+            {!! Form::open(['method'=>'POST','url'=>'qtht/menu-doc/sua-loai-tin', 'enctype'=>'multipart/form-data']) !!}
               <input type="hidden" name="_token" value="{{csrf_token()}}"/>
               <input type="hidden" name="id" value="{{ $loaitin->id }}"/>
 
