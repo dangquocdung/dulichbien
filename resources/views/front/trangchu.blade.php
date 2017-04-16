@@ -30,7 +30,7 @@
                     </h4>
                   </a>
                   <div class="news-desc">
-                    {{ $tin1['tomtat'] }}
+                    {{ $tin1['tomtat'] }}...
                   </div>
                 </div>
               </div>
