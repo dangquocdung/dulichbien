@@ -8127,7 +8127,8 @@ input[type="file"] {
   .list-group .list-group-item .tintuc h4 {
     text-align: center; }
   .list-group .list-group-item .tintuc .minhhoa {
-    padding: 10px;
+    padding: 5px;
+    padding-left: 15px !important;
     display: block;
     margin: 0 auto; }
   .list-group .list-group-item .tintuc .news-desc {
