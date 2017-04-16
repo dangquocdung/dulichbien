@@ -64,7 +64,7 @@
                           <div class="row">
 
                             @foreach ($mt->loaitin as $lt)
-                              <div class="col-sm-3">
+                              <div class="col-md-3 col-xs-6">
                                 <div class="thumbnail">
                                   <a href="/loai-tin/{{ $lt->slug }}">
                                     <img alt="260x130" src="{{ $lt->hinh }}">
