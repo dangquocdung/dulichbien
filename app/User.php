@@ -30,7 +30,7 @@ class User extends Authenticatable
     public function can_post(){
       $level = $this->level;
 
-      if ($level == 2){
+      if ($level > 1){
         return true;
       }
 
