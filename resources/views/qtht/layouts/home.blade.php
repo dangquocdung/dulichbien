@@ -98,7 +98,7 @@
             @if ( Auth::user()->level > 1 )
             <ul class="nav navbar-nav">
               <li>
-                <a href="/qtht/home"><i class="fa fa-home" aria-hidden="true"></i> Tin, Bài, Chuyên mục</a>
+                <a href="/qtht/home"><i class="fa fa-home" aria-hidden="true"></i> Tin, Bài</a>
               </li>
               @if ( Auth::user()->is_admin() || Auth::user()->is_tbbt() )
               <li>
@@ -107,16 +107,18 @@
                 </a>
                 <ul class="dropdown-menu" role="menu">
                   <li>
-                    <a href="/qtht/chuyen-muc/home">
-                      <i class="fa fa-cog" aria-hidden="true"></i> Quản lí chuyên mục
+                    <a href="/qtht/menu-ngang/home">
+                      <i class="fa fa-cog" aria-hidden="true"></i> Quản lí Menu ngang
                     </a>
                   </li>
                   <li class="divider"></li>
+
                   <li>
-                    <a href="/qtht/menu/home">
-                      <i class="fa fa-cog" aria-hidden="true"></i> Quản lí loại tin
+                    <a href="/qtht/menu-doc/home">
+                      <i class="fa fa-cog" aria-hidden="true"></i> Quản lí Menu dọc
                     </a>
                   </li>
+
                   <li class="divider"></li>
                   <li>
                     <a href="/qtht/hinh-slide/home">
@@ -166,11 +168,11 @@
 
       <div class="row row-offcanvas row-offcanvas-right">
 
-        <div class="container">
+        {{-- <div class="container">
           <p class="pull-right visible-xs"  >
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu &raquo;</button>
           </p>
-        </div>
+        </div> --}}
 
         <div class="col-md-12">
 

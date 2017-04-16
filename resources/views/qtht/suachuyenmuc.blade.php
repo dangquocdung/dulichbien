@@ -7,7 +7,7 @@
           <div class="panel-heading"><strong>Thêm Chuyên mục</strong></div>
 
           <div class="panel-body">
-            {!! Form::open(['method'=>'POST','url'=>'qtht/chuyen-muc/sua-chuyen-muc']) !!}
+            {!! Form::open(['method'=>'POST','url'=>'qtht/menu-ngang/sua-chuyen-muc']) !!}
               <input type="hidden" name="_token" value="{{csrf_token()}}"/>
               <input type="hidden" name="id" value="{{ $chuyenmuc->id }}}"/>
 
@@ -15,7 +15,6 @@
                 <div class="form-group">
                   <label>Chuyên mục</label>
                   <input type="text" class="form-control" name="ten" value="{{ $chuyenmuc->ten }}{{ old('ten')}}" placeholder="Nhập Tên Loại tin" required="">
-
                 </div>
 
                 <div class="form-group">
@@ -31,13 +30,10 @@
                   </select>
                 </div>
 
-
                 <div class="form-group">
                   <label>Ghi chú</label>
                   <input class="form-control" name="ghichu" value="{{ $chuyenmuc->ghichu }}{{ old('ghichu')}}" placeholder="Nhập ghi chú"/>
                 </div>
-
-
 
               </div>
 

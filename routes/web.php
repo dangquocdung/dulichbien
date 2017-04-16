@@ -59,7 +59,24 @@ Route::group(['prefix'=>'qtht'],function(){
   Route::get('/chi-tiet-tin/{slug}', 'PostController@show');
 
 
-  Route::group(['prefix'=>'menu'],function(){
+  Route::group(['prefix'=>'menu-ngang'],function(){
+
+    Route::resource('/', 'ChuyenMucController');
+
+    Route::get('/home', 'ChuyenMucController@index');
+    Route::get('/them-chuyen-muc', 'ChuyenMucController@create');
+    Route::post('/them-chuyen-muc', 'ChuyenMucController@store');
+
+    Route::get('/sua-chuyen-muc/{slug}', 'ChuyenMucController@edit');
+    Route::post('/sua-chuyen-muc','ChuyenMucController@update');
+
+    Route::get('/xoa-chuyen-muc/{id}', 'ChuyenMucController@destroy');
+
+
+  });
+
+
+  Route::group(['prefix'=>'menu-doc'],function(){
 
     Route::resource('/', 'MenuController');
 
@@ -75,21 +92,7 @@ Route::group(['prefix'=>'qtht'],function(){
 
   });
 
-  Route::group(['prefix'=>'chuyen-muc'],function(){
 
-    Route::resource('/', 'ChuyenMucController');
-
-    Route::get('/home', 'ChuyenMucController@index');
-    Route::get('/them-chuyen-muc', 'ChuyenMucController@create');
-    Route::post('/them-chuyen-muc', 'ChuyenMucController@store');
-
-    Route::get('/sua-chuyen-muc/{slug}', 'ChuyenMucController@edit');
-    Route::post('/sua-chuyen-muc','ChuyenMucController@update');
-
-    Route::get('/xoa-chuyen-muc/{id}', 'ChuyenMucController@destroy');
-
-
-  });
 
   Route::group(['prefix'=>'hinh-slide'],function(){
 

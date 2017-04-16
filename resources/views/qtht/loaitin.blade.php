@@ -8,7 +8,7 @@
 
     <div class="panel-body">
       <div style="padding-bottom:10px">
-        <a class="btn btn-primary" href="/qtht/menu/them-loai-tin"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm Loại tin</a>
+        <a class="btn btn-primary" href="/qtht/menu-doc/them-loai-tin"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm Loại tin</a>
       </div>
 
       <div class="table-responsive">
@@ -48,10 +48,10 @@
                 <form action="#" method="POST">
                   <input type="hidden" name="_method" value="DELETE">
                   <input type="hidden" name="_token" value="{{csrf_token()}}">
-                  <a href="{{ url('qtht/menu/sua-loai-tin/'.$lt->slug) }}" class="btn btn-warning btn-xs">
+                  <a href="{{ url('qtht/menu-doc/sua-loai-tin/'.$lt->slug) }}" class="btn btn-warning btn-xs">
                     <span class="glyphicon glyphicon-edit"></span>
                   </a>
-                  <a href="{{ url('qtht/menu/xoa-loai-tin/'.$lt->id.'?token='.csrf_token()) }}" class="btn btn-danger btn-xs" onclick="return confirm('Bạn chắc chắn muốn xoá loại tin này?')">
+                  <a href="{{ url('qtht/menu-doc/xoa-loai-tin/'.$lt->id.'?token='.csrf_token()) }}" class="btn btn-danger btn-xs" onclick="return confirm('Bạn chắc chắn muốn xoá loại tin này?')">
                     <span class="glyphicon glyphicon-trash"></span>
                   </a>
                 </form>

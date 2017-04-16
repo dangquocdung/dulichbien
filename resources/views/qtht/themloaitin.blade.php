@@ -7,14 +7,15 @@
           <div class="panel-heading"><strong>Thêm Loại tin</strong></div>
 
           <div class="panel-body">
-            {!! Form::open(['method'=>'POST','url'=>'qtht/menu/them-loai-tin','enctype'=>'multipart/form-data']) !!}
+            {!! Form::open(['method'=>'POST','url'=>'qtht/menu-doc/them-loai-tin','enctype'=>'multipart/form-data']) !!}
               <input type="hidden" name="_token" value="{{csrf_token()}}"/>
               <div class="modal-body">
+
                 <div class="form-group">
                   <label>Chuyên mục</label>
                   <select class="form-control" name="menutop_id" required="">
                     @foreach ($chuyenmuc as $cm)
-                    <option value="{{ $cm->id}}">{{ $cm->ten}}</option>
+                      <option value="{{ $cm->id}}">{{ $cm->ten}}</option>
                     @endforeach
                   </select>
                 </div>
@@ -22,7 +23,6 @@
                 <div class="form-group">
                   <label>Loại Tin</label>
                   <input type="text" class="form-control" name="ten" value="{{ old('ten')}}" placeholder="Nhập Tên Loại tin" required="">
-
                 </div>
 
                 <div class="form-group">

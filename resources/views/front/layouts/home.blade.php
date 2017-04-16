@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./assets/css/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
 
     <!-- Custom styles for this template -->
-    <link href="./assets/css/offcanvas.css" rel="stylesheet">
+    {{-- <link href="./assets/css/offcanvas.css" rel="stylesheet"> --}}
 
   </head>
 
@@ -187,7 +187,7 @@
         </div><!--/span-->
 
         <div class="col-xs-6 col-sm-3 col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
-
+        {{-- <div class="col-xs-6 col-sm-3 col-md-3"> --}}
           @include('front.layouts.menu-right')
 
         </div>
