@@ -47,7 +47,7 @@ class PostController extends Controller
     public function create()
     {
         //
-        if (Auth::user()->can_post() || Auth::user()->is_admin() ){
+        if (Auth::user()->can_post() ){
 
           return view('qtht.themtinbai');
 
