@@ -83,7 +83,7 @@ class MenuController extends Controller
 
         $loaitin->save();
 
-        return redirect('qtht/menu/home');
+        return redirect('qtht/menu-doc/home');
 
     }
 
@@ -148,7 +148,7 @@ class MenuController extends Controller
 
         $loaitin->update();
 
-        return redirect('qtht/menu/home');
+        return redirect('qtht/menu-doc/home');
 
       }
 
@@ -172,6 +172,6 @@ class MenuController extends Controller
         $data['errors'] = 'Bạn không có quyền thực hiện thao tác này!';
       }
 
-      return redirect('qtht/menu/home')->with($data);
+      return redirect('qtht/menu-doc/home')->with($data);
     }
 }

@@ -4,12 +4,17 @@ body {
 }
 
 body {
-  padding-top: 175px;
+  padding-top: 160px;
   background: $bg-color;
 }
 
 .navbar{
   background: #1a8c97;
+  margin-bottom: 0;
+}
+
+.sidebar-offcanvas{
+  padding-right: 0;
 }
 
 input[type="file"] {

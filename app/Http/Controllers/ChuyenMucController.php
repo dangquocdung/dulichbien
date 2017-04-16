@@ -24,7 +24,6 @@ class ChuyenMucController extends Controller
         $tintuc = TinTuc::orderby('id','desc')->get();
         view()->share('tintuc',$tintuc);
 
-
     }
     /**
      * Display a listing of the resource.
@@ -47,7 +46,7 @@ class ChuyenMucController extends Controller
      */
     public function create()
     {
-      if ( Auth::user()->is_admin() || Auth::user()->is_admin() ){
+      if ( Auth::user()->is_tbbt() || Auth::user()->is_admin() ){
 
         return view('qtht.themchuyenmuc');
 
@@ -73,7 +72,7 @@ class ChuyenMucController extends Controller
 
       $chuyenmuc->save();
 
-      return redirect('qtht/chuyen-muc/home');
+      return redirect('qtht/menu-ngang/home');
     }
 
     /**
@@ -97,13 +96,13 @@ class ChuyenMucController extends Controller
     {
       $chuyenmuc = MenuTop::where('slug',$slug)->first();
 
-      if ($chuyenmuc && Auth::user()->is_admin()){
+      if ($chuyenmuc && ( Auth::user()->is_tbbt() || Auth::user()->is_admin() ) ){
 
         return view ('qtht.suachuyenmuc',['chuyenmuc'=>$chuyenmuc]);
 
       }else{
 
-        return redirect ('qtht/chuyen-muc/home')->withErrors('Bạn không có quyền sửa tin bài này!');
+        return redirect ('qtht/menu-ngang/home')->withErrors('Bạn không có quyền sửa tin bài này!');
 
       }
     }
@@ -121,7 +120,7 @@ class ChuyenMucController extends Controller
 
       $chuyenmuc = MenuTop::find($id);
 
-      if ($chuyenmuc && Auth::user()->is_admin()){
+      if ($chuyenmuc && ( Auth::user()->is_tbbt() || Auth::user()->is_admin() ) ){
 
         $chuyenmuc->ten = $request->get('ten');
         $chuyenmuc->slug = str_slug($request->get('ten'));
@@ -129,10 +128,10 @@ class ChuyenMucController extends Controller
         $chuyenmuc->ghichu = $request->get('ghichu');
 
         $chuyenmuc->update();
-
-        return redirect('qtht/chuyen-muc/home');
-
       }
+
+      return redirect('qtht/menu-ngang/home');
+      
     }
 
     /**
@@ -152,7 +151,7 @@ class ChuyenMucController extends Controller
         $data['errors'] = 'Bạn không có quyền thực hiện thao tác này!';
       }
 
-      return redirect('qtht/chuyen-muc/home')->with($data);
+      return redirect('qtht/menu-ngang/home')->with($data);
     }
 
 }
