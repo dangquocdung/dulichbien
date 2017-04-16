@@ -17,25 +17,29 @@
                 $tin1 = $data->shift();
               @endphp
 
-              <div class="col-md-7 col-sm-7 col-xs-12 tintuc">
+              <div class="col-md-7 col-sm-12 col-xs-12 tintuc">
                 <div class="col-md-5 col-sm-5 minhhoa">
                   <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
                       <img src="{{ $tin1['urlhinh'] }}" alt="" width="100%">
                   </a>
                 </div>
                 <div class="col-md-7 col-sm-7">
-                  <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
-                    <h4>
-                      {{ $tin1['tieude'] }}
-                    </h4>
-                  </a>
-                  <div class="news-desc">
-                    {{ $tin1['tomtat'] }}...
+                  <div class="row">
+                    <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
+                      <h4>
+                        {{ $tin1['tieude'] }}
+                      </h4>
+                    </a>
+                    <div class="news-desc">
+                      {{ $tin1['tomtat'] }}...
+                    </div>
+
                   </div>
+
                 </div>
               </div>
 
-              <div class="col-md-5 col-sm-5 hidden-xs">
+              <div class="col-md-5 col-sm-5 hidden-xs hidden-sm">
                 @foreach ($data as $tn)
                   <div class="tin-moi">
                     <table>
