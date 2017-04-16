@@ -69,7 +69,11 @@
             <tr>
               <td>{{ $tin->id }}</td>
               <td style="text-align:left;">
-                <a href="/chi-tiet-tin/{{$tin->tieudekhongdau}}" target="_blank">{{ $tin->tieude }}</a>
+                @if ($tin->active==0)
+                  {{ $tin->tieude }}
+                @else
+                  <a href="/chi-tiet-tin/{{$tin->tieudekhongdau}}" target="_blank">{{ $tin->tieude }}</a>
+                @endif
               </td>
               <td>
                 @if ($tin->tinnoibat==0)
