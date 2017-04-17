@@ -34,7 +34,7 @@ class PostController extends Controller
     {
         //
         $search = $request->get('search');
-        $posts = TinTuc::where('tieude','like','%'.$search.'%')->orderBy('created_at')->paginate(10);
+        $posts = TinTuc::where('tieude','like','%'.$search.'%')->orderBy('created_at','desc')->paginate(10);
 
         return view('qtht.trangchu',['posts'=>$posts]);
     }
