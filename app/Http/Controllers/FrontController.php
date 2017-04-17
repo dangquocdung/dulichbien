@@ -50,6 +50,11 @@ class FrontController extends Controller
     return view('front.lichcongtac',['lichcongtac'=>$lichcongtac]);
   }
 
+  public function getVideo()
+  {
+      return view('front.video');
+  }
+
   public function getChuyenMuc($slug)
   {
       $chuyenmuc = MenuTop::where('slug',$slug)->first();
