@@ -20,6 +20,11 @@
 
     <!-- Bootstrap core CSS -->
     <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Owl Stylesheets -->
+    {{-- <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" --}}
+
     <!-- Bootstrap custom CSS -->
     <link href="./assets/css/app.css" rel="stylesheet">
 
@@ -176,9 +181,7 @@
               </div>
           </div>
         </div>
-          <!-- end slide -->
-
-
+        <!-- end slide -->
 
         <div class="col-xs-12 col-sm-9 col-md-9">
 
@@ -217,6 +220,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/owl.autoplay.js"></script>
+
     <script src="./js/offcanvas.js"></script>
     <script type="text/javascript" src="./js/jquery.fancybox.pack.js?v=2.1.6"></script>
     <script type="text/javascript">

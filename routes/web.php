@@ -28,6 +28,8 @@ Route::get('/user/activation/{token}', 'Auth\RegisterController@userActivation')
 //
 // });
 
+Route::get('/chuyen-muc/video', 'FrontController@getVideo');
+
 Route::get('/chuyen-muc/{slug}', 'FrontController@getChuyenMuc');
 
 Route::get('/loai-tin/{slug}', 'FrontController@getLoaiTin');
