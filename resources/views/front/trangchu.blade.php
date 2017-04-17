@@ -61,21 +61,5 @@
 
   @endforeach
 
-  <div class="list-group">
-    <a class="list-group-item active main-color-bg" href="/chuyen-muc/video">
-      <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Video
-    </a>
-
-
-    <div class="video-container">
-      <iframe width="854" height="480" src="https://www.youtube.com/embed/DqTo2Cl1mtQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <div class="footer-mega-link" style="margin-top:0">
-      <a href="/chuyen-muc/video"><small>Nhiều hơn...</small></a>
-    </div>
-
-  </div>
-
 </div>
 @endsection
