@@ -11,6 +11,7 @@ use App\HinhSlide;
 use App\LoaiVB;
 use App\VanBan;
 use App\LichCongTac;
+use App\VideoClip;
 
 
 class FrontController extends Controller
@@ -35,6 +36,9 @@ class FrontController extends Controller
     $namtinmoinhat = TinTuc::orderby('id','desc')->limit(5)->get();
     view()->share('namtinmoinhat',$namtinmoinhat);
 
+    $video1 = VideoClip::orderby('thutu','asc')->orderby('created_at','desc')->first();
+    view()->share('video1',$video1);
+
 
   }
 
@@ -52,7 +56,8 @@ class FrontController extends Controller
 
   public function getVideo()
   {
-      return view('front.video');
+      $videos = VideoClip::orderby('created_at','asc')->get();
+      return view('front.video',['videos'=>$videos]);
   }
 
   public function getChuyenMuc($slug)

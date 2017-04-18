@@ -114,6 +114,24 @@ Route::group(['prefix'=>'qtht'],function(){
 
   });
 
+  Route::group(['prefix'=>'video-clip'],function(){
+
+    Route::resource('/', 'VideoClipController');
+
+    Route::get('/home', 'VideoClipController@index');
+
+    Route::get('/them-video', 'VideoClipController@create');
+
+    Route::post('/them-video', 'VideoClipController@store');
+
+    Route::get('/sua-video/{id}', 'VideoClipController@edit');
+    Route::post('/sua-video','VideoClipController@update');
+
+    Route::get('/xoa-video/{id}', 'VideoClipController@destroy');
+
+
+  });
+
   Route::group(['prefix'=>'lich-cong-tac'],function(){
 
     Route::resource('/', 'LichCongTacController');

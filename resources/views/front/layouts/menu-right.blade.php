@@ -13,14 +13,18 @@
   {!! Form::close() !!}
 </div>
 
+@if ($video1)
+
 <div class="list-group">
   <a class="list-group-item active main-color-bg" href="/chuyen-muc/video">
     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Video...
   </a>
   <div class="video-container">
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/DqTo2Cl1mtQ" frameborder="0" allowfullscreen></iframe>
+    {!! $video1->videoclip !!}
   </div>
 </div>
+
+@endif
 
 
 
