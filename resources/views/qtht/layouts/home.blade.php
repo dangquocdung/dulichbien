@@ -125,6 +125,13 @@
                       <i class="fa fa-cog" aria-hidden="true"></i> Quản lí hình slide
                     </a>
                   </li>
+
+                  <li class="divider"></li>
+                  <li>
+                    <a href="/qtht/video-clip/home">
+                      <i class="fa fa-cog" aria-hidden="true"></i> Quản lí video clip
+                    </a>
+                  </li>
                 </ul>
               </li>
               @endif
