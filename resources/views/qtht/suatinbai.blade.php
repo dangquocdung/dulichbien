@@ -70,13 +70,20 @@
               </div>
 
               <div class="modal-footer">
-                @if ( Auth::user()->is_admin() )
-                  <input type="submit" name="capnhat" value="Cập nhật" class="btn btn-success" >
-                  <input type="submit" name="duyetdang" value="Duyệt Đăng" class="btn btn-primary" >
-                @elseif ( Auth::user()->is_tbbt() )
-                  <input type="submit" name="duyetdang" value="Duyệt Đăng" class="btn btn-primary" >
-                @elseif ( $tintuc->user_id == Auth::user()->id )
-                  <input type="submit" name="capnhat" value="Cập nhật" class="btn btn-success" >
+                @if ($tintuc->active == 0)
+                  @if ( Auth::user()->is_admin() )
+                    <input type="submit" name="capnhat" value="Cập nhật" class="btn btn-success" >
+                    <input type="submit" name="duyetdang" value="Duyệt Đăng" class="btn btn-primary" >
+                  @elseif ( Auth::user()->is_tbbt() )
+                    <input type="submit" name="duyetdang" value="Duyệt Đăng" class="btn btn-primary" >
+                  @elseif ( $tintuc->user_id == Auth::user()->id )
+                    <input type="submit" name="capnhat" value="Cập nhật" class="btn btn-success" >
+                  @endif
+                @else
+                  @if( Auth::user()->is_tbbt() || Auth::user()->is_admin())
+                    <input type="submit" name="capnhat" value="Cập nhật" class="btn btn-success" >
+                  @endif
+
                 @endif
               </div>
               {!! Form::close() !!}
