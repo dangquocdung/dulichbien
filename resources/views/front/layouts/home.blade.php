@@ -52,9 +52,14 @@
             </div>
           </div>
         </div>
+        </div>
+
+        <div class="menu-ngang">
+          <div class="container">
 
 
-          <div id="navbar-collapse" class="navbar navbar-default yamm navbar-collapse collapse">
+          {{-- <div id="navbar-collapse" class="navbar navbar-default yamm navbar-collapse collapse"> --}}
+          <div class="yamm collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li>
                 <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
@@ -124,7 +129,9 @@
             </ul>
           </div><!-- /.nav-collapse -->
 
+        </div>
       </div>
+
 
     </div><!-- /.navbar -->
 

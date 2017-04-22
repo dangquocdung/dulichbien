@@ -11,6 +11,17 @@ body {
   background: #1a8c97;
 }
 
+.menu-ngang{
+  background-color: darken(#1a8c97, 10%);
+  ul{
+    li{
+      a{
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
 .sidebar-offcanvas{
   padding-right: 0;
 }

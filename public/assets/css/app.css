@@ -8071,6 +8071,11 @@ body {
 .navbar {
   background: #1a8c97; }
 
+.menu-ngang {
+  background-color: #13646b; }
+  .menu-ngang ul li a {
+    text-transform: uppercase; }
+
 .sidebar-offcanvas {
   padding-right: 0; }
 
