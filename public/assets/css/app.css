@@ -8071,11 +8071,6 @@ body {
 .navbar {
   background: #1a8c97; }
 
-.menu-ngang {
-  background-color: #13646b; }
-  .menu-ngang ul li a {
-    text-transform: uppercase; }
-
 .sidebar-offcanvas {
   padding-right: 0; }
 
@@ -8195,7 +8190,7 @@ table tr td {
   height: 40px;
   width: 40px;
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   right: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
