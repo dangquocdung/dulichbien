@@ -100,6 +100,7 @@ class PostController extends Controller
       else {
         $tintuc->active = 0;
       }
+      
       $tintuc->save();
 
       return redirect('qtht/home');
