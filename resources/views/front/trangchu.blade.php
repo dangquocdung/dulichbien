@@ -13,7 +13,7 @@
             <div class="row">
 
               @php
-                $data = $mt->tintuc->where('active','1')->sortByDesc('created_at')->take(5);
+                $data = $mt->tintuc->where('active','1')->sortByDesc('created_at')->take(6);
                 $tin1 = $data->shift();
               @endphp
 
