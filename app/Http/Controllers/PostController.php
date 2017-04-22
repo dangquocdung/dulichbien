@@ -94,9 +94,12 @@ class PostController extends Controller
         $tenhinh = $tintuc->urlhinh;
       }
       $tintuc->urlhinh = $tenhinh;
-      $tintuc->active = 0;
 
-
+      if ( Auth::user()->level > 2)
+        $tintuc->active = 1;
+      else {
+        $tintuc->active = 0;
+      }
       $tintuc->save();
 
       return redirect('qtht/home');
