@@ -26,6 +26,25 @@
             <div class="noi-dung">
               {!! $tin->noidung !!}
             </div>
+
+            @if ( Auth::user() && Auth::user()->is_admin() )
+              <div class="" style="text-align:right">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                  <input type="hidden" name="_method" value="DELETE">
+                  <input type="hidden" name="_token" value="{{csrf_token()}}">
+
+                  <a href="{{ url('qtht/sua-tin-bai/'.$tin->tieudekhongdau) }}" class="btn btn-warning btn-xs">
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </a>
+
+                  <a href="{{ url('qtht/xoa-tin-bai/'.$tin->id.'?token='.csrf_token()) }}" class="btn btn-danger btn-xs" onclick="return confirm('Bạn chắc chắn muốn xoá tin?')">
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </a>
+                </form>
+
+              </div>
+
+            @endif
           {{-- </div> --}}
         </div>
       </div>
