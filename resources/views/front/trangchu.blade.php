@@ -30,7 +30,7 @@
                       </h4>
                     </a>
                     <div class="news-desc">
-                      {{ $tin1['tomtat'] }}...
+                      {{ str_limit($tin1['tomtat'], $limit=200, $end='...') }}
                     </div>
                 </div>
               </div>
