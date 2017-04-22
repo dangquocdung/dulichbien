@@ -8066,12 +8066,10 @@ body {
   /* Prevent scroll on narrow devices */ }
 
 body {
-  padding-top: 160px;
   background: #fcf8e3; }
 
 .navbar {
-  background: #1a8c97;
-  margin-bottom: 0; }
+  background: #1a8c97; }
 
 .sidebar-offcanvas {
   padding-right: 0; }
@@ -8248,8 +8246,6 @@ table tr td {
  * --------------------------------------------------
  */
 @media screen and (max-width: 767px) {
-  body {
-    padding-top: 80px; }
   .row-offcanvas {
     position: relative;
     transition: all .25s ease-out; }
