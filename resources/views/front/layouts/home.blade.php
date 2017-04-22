@@ -56,81 +56,80 @@
 
         <div class="menu-ngang">
           <div class="container">
-
-
           {{-- <div id="navbar-collapse" class="navbar navbar-default yamm navbar-collapse collapse"> --}}
-          <div class="yamm collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
-              </li>
-              @if ($menutop)
-                @foreach ($menutop as $mt)
-                  <li class="dropdown yamm-fw">
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ $mt->ten }}<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <div class="yamm-content">
-                          <div class="row">
+            <div class="yamm collapse navbar-collapse">
 
-                            @foreach ($mt->loaitin as $lt)
-                              <div class="col-md-3 col-xs-6">
-                                <div class="thumbnail">
-                                  <a href="/loai-tin/{{ $lt->slug }}">
-                                    <img alt="260x130" src="{{ $lt->hinh }}">
-                                  </a>
-
-                                  <div class="caption">
-                                    <h4>{{ $lt->ten }}</h4>
-                                    <p>{{ $lt->ghichu }}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            @endforeach
-
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
                   </li>
-                @endforeach
-              @endif
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
+                  @if ($menutop)
+                    @foreach ($menutop as $mt)
+                      <li class="dropdown yamm-fw">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ $mt->ten }}<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <div class="yamm-content">
+                              <div class="row">
 
-              <li>
-                @if (Auth::guest())
-                    <li><a href="{{ route('login') }}">Đăng nhập</a></li>
-                    {{-- <li><a href="{{ route('register') }}">Đăng kí</a></li> --}}
-                @else
+                                @foreach ($mt->loaitin as $lt)
+                                  <div class="col-md-3 col-xs-6">
+                                    <div class="thumbnail">
+                                      <a href="/loai-tin/{{ $lt->slug }}">
+                                        <img alt="260x130" src="{{ $lt->hinh }}">
+                                      </a>
 
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      {{ Auth::user()->name }} ({{ Auth::user()->level }})<span class="caret"></span>
-                  </a>
+                                      <div class="caption">
+                                        <h4>{{ $lt->ten }}</h4>
+                                        <p>{{ $lt->ghichu }}</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                @endforeach
 
-                  <ul class="dropdown-menu" role="menu">
-                      <li><a href="/qtht" target="_blank">Trang quản trị</a></li>
-                      <li class="divider"></li>
-                      <li>
-                          <a href="{{ route('logout') }}"
-                              onclick="event.preventDefault();
-                                       document.getElementById('logout-form').submit();">
-                              Logout
-                          </a>
-
-                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                              {{ csrf_field() }}
-                          </form>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
                       </li>
-                  </ul>
-                @endif
-              </li>
+                    @endforeach
+                  @endif
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
 
-            </ul>
-          </div><!-- /.nav-collapse -->
+                  <li>
+                    @if (Auth::guest())
+                        <li><a href="{{ route('login') }}">Đăng nhập</a></li>
+                        {{-- <li><a href="{{ route('register') }}">Đăng kí</a></li> --}}
+                    @else
 
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                          {{ Auth::user()->name }} ({{ Auth::user()->level }})<span class="caret"></span>
+                      </a>
+
+                      <ul class="dropdown-menu" role="menu">
+                          <li><a href="/qtht" target="_blank">Trang quản trị</a></li>
+                          <li class="divider"></li>
+                          <li>
+                              <a href="{{ route('logout') }}"
+                                  onclick="event.preventDefault();
+                                           document.getElementById('logout-form').submit();">
+                                  Logout
+                              </a>
+
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                  {{ csrf_field() }}
+                              </form>
+                          </li>
+                      </ul>
+                    @endif
+                  </li>
+                </ul>
+
+            </div><!-- /.nav-collapse -->
+
+          </div>
         </div>
-      </div>
 
 
     </div><!-- /.navbar -->
@@ -138,10 +137,11 @@
     <div class="main-content">
       <div class="container">
 
+
       <div class="row row-offcanvas row-offcanvas-right">
 
         <div class="container">
-          <p class="pull-right visible-xs"  >
+          <p class="pull-right visible-xs" >
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu &raquo;</button>
           </p>
         </div>

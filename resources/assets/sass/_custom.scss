@@ -12,11 +12,11 @@ body {
 }
 
 .menu-ngang{
-  background-color: darken(#1a8c97, 10%);
+  // background-color: darken(#1a8c97, 10%);
   ul{
     li{
       a{
-        text-transform: uppercase;
+        // text-transform: uppercase;
       }
     }
   }
@@ -198,7 +198,7 @@ table {
     height: 40px;
     width: 40px;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 50%;
@@ -213,6 +213,8 @@ table {
     -moz-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
 }
+
+
 
 .chi-tiet-tin{
   h2{
