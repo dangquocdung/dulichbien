@@ -8144,8 +8144,12 @@ input[type="file"] {
   font-weight: bold;
   font-style: italic; }
 
+.list-group .list-group-item .chi-tiet-tin .noi-dung {
+  text-align: justify; }
+
 .hinh-minh-hoa img {
   padding: 5px;
+  padding-bottom: 15px;
   display: block;
   margin: 0 auto; }
 

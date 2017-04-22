@@ -19,8 +19,10 @@
               <a href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">
                 <h4>{{ $ttl->tieude }}</h4>
               </a>
-              <p>{{ $ttl->tomtat }}</p>
-              <a class="btn btn-primary" href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">Chi tiết... <span class="glyphicon glyphicon-chevron-right"></span></a>
+              <div class="hidden-xs">
+                <p>{{ $ttl->tomtat }}</p>
+              </div>
+              <a class="pull-right btn btn-primary" href="/chi-tiet-tin/{{ $ttl->tieudekhongdau }}">Chi tiết... <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
           </div>
         </div>

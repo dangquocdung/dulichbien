@@ -33,7 +33,7 @@
 
                 <div class="form-group">
                   <label>Tóm tắt</label>
-                  <input type="text" class="form-control" name="tomtat" rows="3" value="{{ old('tomtat')}}" placeholder="Nhập tóm tắt" required=""/>
+                  <textarea class="form-control" name="tomtat" rows="3" placeholder="Nhập tóm tắt" required=""/>{{ old('tomtat')}}</textarea>
                 </div>
 
                 <div class="form-group">
