@@ -44,7 +44,7 @@
                   <div class="tin-moi">
                     <table>
                       <tr>
-                        <td><img src="{{ $tn->urlhinh }}" alt="" style="max-width:50px;"></td>
+                        <td><img src="{{ $tn->urlhinh }}" alt="" style="max-width:50px; padding:5px;"></td>
                         <td  style="text-align:left; padding-left: 10px;"><a href="/chi-tiet-tin/{{$tn->tieudekhongdau}}">{{ $tn->tieude }}</a></td>
                       </tr>
                     </table>
