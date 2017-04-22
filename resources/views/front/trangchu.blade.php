@@ -24,7 +24,6 @@
                   </a>
                 </div>
                 <div class="col-md-7 col-sm-7">
-                  {{-- <div class="row"> --}}
                     <a href="/chi-tiet-tin/{{ $tin1['tieudekhongdau']}}">
                       <h4>
                         {{ $tin1['tieude'] }}
@@ -33,9 +32,6 @@
                     <div class="news-desc">
                       {{ $tin1['tomtat'] }}...
                     </div>
-
-                  {{-- </div> --}}
-
                 </div>
               </div>
 

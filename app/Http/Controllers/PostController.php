@@ -100,7 +100,7 @@ class PostController extends Controller
       else {
         $tintuc->active = 0;
       }
-      
+
       $tintuc->save();
 
       return redirect('qtht/home');
@@ -182,7 +182,7 @@ class PostController extends Controller
           $tintuc->update();
         }
 
-        return redirect('qtht');
+        return redirect('chi-tiet-tin/'.$tintuc->tieudekhongdau);
 
 
     }
