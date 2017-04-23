@@ -8165,7 +8165,7 @@ table tr td {
   vertical-align: middle;
   /* center checkbox vertically */ }
   table tr td img {
-    max-width: 80%; }
+    max-width: 700px; }
 
 .break {
   clear: both;
@@ -8276,7 +8276,19 @@ table tr td {
     /* 6 columns */ }
   #googleMap {
     height: 200px;
-    width: 100%; } }
+    width: 100%; }
+  table tr th {
+    text-align: center;
+    /* center checkbox horizontally */
+    vertical-align: middle;
+    /* center checkbox vertically */ }
+  table tr td {
+    text-align: center;
+    /* center checkbox horizontally */
+    vertical-align: middle;
+    /* center checkbox vertically */ }
+    table tr td img {
+      max-width: 100%; } }
 
 
 /*# sourceMappingURL=app.css.map */
