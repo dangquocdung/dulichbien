@@ -8164,8 +8164,6 @@ table tr td {
   /* center checkbox horizontally */
   vertical-align: middle;
   /* center checkbox vertically */ }
-  table tr td img {
-    max-width: 200px; }
 
 .break {
   clear: both;
