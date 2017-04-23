@@ -8288,7 +8288,7 @@ table tr td {
     vertical-align: middle;
     /* center checkbox vertically */ }
     table tr td img {
-      max-width: 400px; } }
+      max-width: 100%; } }
 
 
 /*# sourceMappingURL=app.css.map */
