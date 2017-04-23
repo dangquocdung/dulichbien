@@ -3,7 +3,7 @@
  * --------------------------------------------------
  */
 @media screen and (max-width: 767px) {
-  
+
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
@@ -46,5 +46,22 @@
   #googleMap {
       height: 200px;
       width: 100%;
+  }
+
+  table {
+    tr{
+      th{
+        text-align: center; /* center checkbox horizontally */
+        vertical-align: middle; /* center checkbox vertically */
+      }
+      td{
+        text-align: center; /* center checkbox horizontally */
+        vertical-align: middle; /* center checkbox vertically */
+
+        img {
+          max-width: 200px;
+        }
+      }
+    }
   }
 }
