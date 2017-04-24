@@ -8153,18 +8153,21 @@ input[type="file"] {
   display: block;
   margin: 0 auto; }
 
-table tr th {
+.noidung img {
+  max-width: 700px; }
+
+.noidung table tr th {
   text-align: center;
   /* center checkbox horizontally */
   vertical-align: middle;
   /* center checkbox vertically */ }
 
-table tr td {
+.noidung table tr td {
   text-align: center;
   /* center checkbox horizontally */
   vertical-align: middle;
   /* center checkbox vertically */ }
-  table tr td img {
+  .noidung table tr td img {
     max-width: 700px; }
 
 .break {
