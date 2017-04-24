@@ -8153,21 +8153,21 @@ input[type="file"] {
   display: block;
   margin: 0 auto; }
 
-.noidung p img {
+.chi-tiet-tin .noi-dung p img {
   max-width: 700px; }
 
-.noidung table tr th {
+.chi-tiet-tin .noi-dung table tr th {
   text-align: center;
   /* center checkbox horizontally */
   vertical-align: middle;
   /* center checkbox vertically */ }
 
-.noidung table tr td {
+.chi-tiet-tin .noi-dung table tr td {
   text-align: center;
   /* center checkbox horizontally */
   vertical-align: middle;
   /* center checkbox vertically */ }
-  .noidung table tr td img {
+  .chi-tiet-tin .noi-dung table tr td img {
     max-width: 700px; }
 
 .break {

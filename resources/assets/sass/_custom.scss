@@ -151,36 +151,38 @@ input[type="file"] {
   }
 }
 
-.noidung{
-  p {
-    img {
-      max-width: 700px;
+.chi-tiet-tin{
+  .noi-dung{
+    p {
+      img {
+        max-width: 700px;
+      }
+
     }
 
-  }
 
 
+    table {
+      tr{
+        th{
+          text-align: center; /* center checkbox horizontally */
+          vertical-align: middle; /* center checkbox vertically */
+        }
+        td{
+          text-align: center; /* center checkbox horizontally */
+          vertical-align: middle; /* center checkbox vertically */
 
-  table {
-    tr{
-      th{
-        text-align: center; /* center checkbox horizontally */
-        vertical-align: middle; /* center checkbox vertically */
-      }
-      td{
-        text-align: center; /* center checkbox horizontally */
-        vertical-align: middle; /* center checkbox vertically */
-
-        img {
-          max-width: 700px;
+          img {
+            max-width: 700px;
+          }
         }
       }
     }
+
   }
 
+
 }
-
-
 
 .break {
     clear: both;
