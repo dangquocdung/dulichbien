@@ -8280,17 +8280,19 @@ input[type="file"] {
   #googleMap {
     height: 200px;
     width: 100%; }
-  table tr th {
+  .chi-tiet-tin .noi-dung p img {
+    max-width: 100%; }
+  .chi-tiet-tin .noi-dung table tr th {
     text-align: center;
     /* center checkbox horizontally */
     vertical-align: middle;
     /* center checkbox vertically */ }
-  table tr td {
+  .chi-tiet-tin .noi-dung table tr td {
     text-align: center;
     /* center checkbox horizontally */
     vertical-align: middle;
     /* center checkbox vertically */ }
-    table tr td img {
+    .chi-tiet-tin .noi-dung table tr td img {
       max-width: 100%; } }
 
 

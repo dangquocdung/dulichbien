@@ -48,18 +48,27 @@
       width: 100%;
   }
 
-  table {
-    tr{
-      th{
-        text-align: center; /* center checkbox horizontally */
-        vertical-align: middle; /* center checkbox vertically */
-      }
-      td{
-        text-align: center; /* center checkbox horizontally */
-        vertical-align: middle; /* center checkbox vertically */
-
+  .chi-tiet-tin{
+    .noi-dung{
+      p {
         img {
           max-width: 100%;
+        }
+      }
+      table {
+        tr{
+          th{
+            text-align: center; /* center checkbox horizontally */
+            vertical-align: middle; /* center checkbox vertically */
+          }
+          td{
+            text-align: center; /* center checkbox horizontally */
+            vertical-align: middle; /* center checkbox vertically */
+
+            img {
+              max-width: 100%;
+            }
+          }
         }
       }
     }
