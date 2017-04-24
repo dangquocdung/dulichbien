@@ -152,10 +152,14 @@ input[type="file"] {
 }
 
 .noidung{
+  p {
+    img {
+      max-width: 700px;
+    }
 
-  img {
-    max-width: 700px;
   }
+
+
 
   table {
     tr{
