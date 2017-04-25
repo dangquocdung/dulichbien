@@ -15,7 +15,7 @@ return [
     'name' => 'Chuyên Trang Du lịch Biển Hà Tĩnh',
     'diachi' => 'Sở Thông Tin - Truyền Thông Hà Tĩnh',
     'dienthoai' => '(0239) 88888888',
-    'email' => 'dulichbien@hatinh.gov.vn',
+    'email' => 'dulichbien@hatinh.top',
     'cio' => 'Phan Tấn Linh',
     'brand' => 'dulichbien',
     'toado' => '18.335534, 105.906581',
