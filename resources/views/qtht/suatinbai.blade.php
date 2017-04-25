@@ -46,7 +46,7 @@
 
                 <div class="form-group">
                   <label>Tóm tắt</label>
-                  <input type="text" class="form-control" name="tomtat" rows="3" value="{{ $tintuc->tomtat }}" required=""/>
+                  <textarea class="form-control" name="tomtat" rows="3" placeholder="Nhập tóm tắt" required=""/>{{ $tintuc->tomtat }}{{ old('tomtat')}}</textarea>
                 </div>
 
                 <div class="form-group">
