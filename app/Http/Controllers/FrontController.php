@@ -63,6 +63,11 @@ class FrontController extends Controller
       return view('front.video',['videos'=>$videos]);
   }
 
+  public function getCNDL()
+  {
+      return view('front.camnangdulich');
+  }
+
   public function getChuyenMuc($slug)
   {
       $chuyenmuc = MenuTop::where('slug',$slug)->first();

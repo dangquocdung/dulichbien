@@ -13,6 +13,15 @@
   {!! Form::close() !!}
 </div>
 
+<div class="list-group">
+  <a  class="list-group-item active main-color-bg" href="/cam-nang-du-lich">
+    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Cẩm nang du lịch...
+  </a>
+  <a href="/cam-nang-du-lich">
+    <img class="img-responsive" src="./img/cndl/cam nang-p01.jpg" style="display:block; margin:0 auto" width="100%">
+  </a>
+</div>
+
 @if ($video1)
 
 <div class="list-group">
@@ -25,6 +34,7 @@
 </div>
 
 @endif
+
 
 
 
