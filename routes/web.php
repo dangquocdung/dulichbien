@@ -40,6 +40,9 @@ Route::get('/van-ban/{slug}', 'FrontController@getVanBan');
 
 Route::post('/tim-kiem', 'FrontController@postTimKiem');
 
+Route::get('/cam-nang-du-lich', 'FrontController@getCNDL');
+
+
 
 Auth::routes();
 
