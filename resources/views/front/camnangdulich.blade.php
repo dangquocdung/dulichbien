@@ -146,11 +146,46 @@
           </p>
         </div>
 
+        <!-- slider -->
+        <div class="list-group">
+         <div class="row carousel-holder">
+              <div class="col-md-12">
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+
+
+
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+
+
+                      </ol>
+                      <div class="carousel-inner">
+
+                          <div class="item active">
+                              <img class="slide-image" src="../img/cndl/cam nang-p01.jpg" alt="">
+                          </div>
+
+
+
+                      </div>
+                      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- end slide -->
+
+
         <div class="col-xs-12 col-sm-12 col-md-12">
 
           <div class="row">
 
-                @for ($i = 1;$i < 93 ;$i++)
+                @for ($i = 2;$i < 92 ;$i++)
                 <div class="col-md-2 col-xs-6">
                   @if ($i < 10 )
                     <a class="cam-nang" href="../img/cndl/cam nang-p0{{ $i }}.jpg">
@@ -165,7 +200,7 @@
                 </div>
               @endfor
 
-            
+
           </div>
 
         </div><!--/span-->
