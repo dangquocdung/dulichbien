@@ -25,4 +25,6 @@
 
 
   </div>
+
+    <a href="#" class="cd-top cd-is-visible">Top</a>
 @endsection
