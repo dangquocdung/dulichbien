@@ -212,10 +212,10 @@
         <div class="content">
           <h4>{{ config('app.name', 'Dang Quoc Dung') }}</h4>
           <p>Chủ quản: {{ config('app.diachi', 'Dang Quoc Dung') }} - Điện thoại: {{ config('app.dienthoai', 'Dang Quoc Dung') }} - Thư điện tử: {{ config('app.email', 'Dang Quoc Dung') }}</p>
-          <p>Chịu trách nhiệm nội dung: {{ config('app.cio', 'Dang Quoc Dung') }} - Giám Đốc Sở.</p>
+          <p>Chịu trách nhiệm nội dung: {{ config('app.cio', 'Dang Quoc Dung') }} - Giám Đốc Sở TT-TT Hà Tĩnh.</p>
           <p>&copy;2017 Bản quyền nội dung thuộc {{ config('app.name', 'Dang Quoc Dung') }} | Thiết kế và phát triển: <a href="http://facebook.com/dung1981" target="_blank">Đặng Quốc Dũng</a> | <a href="http://www.dangquocdung.com" target="_blank">Điều khoản sử dụng thông tin</a> | <a href="http://www.dangquocdung.com" target="_blank">Chính sách bảo mật</a></p>
         </div>
-        <a href="#" class="cd-top cd-is-visible">Top</a>
+        {{-- <a href="#" class="cd-top cd-is-visible">Top</a> --}}
       </div>
     </div>
 
