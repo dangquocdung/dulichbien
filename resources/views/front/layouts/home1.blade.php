@@ -146,7 +146,7 @@
           </p>
         </div>
 
-      
+
         <div class="col-xs-12 col-sm-9 col-md-9">
 
           @yield('content')
@@ -191,6 +191,7 @@
     <script type="text/javascript" src="./js/jquery.fancybox.pack.js?v=2.1.6"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+        $(".cam-nang").fancybox();
         $(".bando").fancybox();
         $(".thongke").fancybox();
       });
