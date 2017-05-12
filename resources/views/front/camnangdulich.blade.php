@@ -3,7 +3,7 @@
   <div class="row">
       <div class="col-md-12 col-xs-12">
 
-          <img class="img-responsive" src="../img/cndl/cam nang-p01.jpg" style="display:block; margin:0 auto; padding-bottom:10px;" width="100%">
+          <img class="img-responsive" src="../img/cndl/cam nang-p01.jpg" style="display:block; margin:0 auto; padding-bottom:10px;" width="70%">
 
 
       </div>
