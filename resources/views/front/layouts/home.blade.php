@@ -303,7 +303,7 @@ jQuery(document).ready(function () {
 });
 </script>
 <div id="cfacebook">
-<a href="javascript:;" class="chat_fb" onclick="return:false;"><i class="fa fa-facebook-square"></i> Phản hồi của bạn</a>
+<a href="javascript:;" class="chat_fb" onclick="return:false;"><i class="fa fa-facebook-square"></i> Gửi tin đến BBT</a>
 <div class="fchat">
 <div class="fb-page" data-tabs="messages" data-href="https://www.facebook.com/dulichbienhatinh" data-width="250" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
 </div>
