@@ -211,7 +211,7 @@
     	<div class="container">
         <div class="content">
           <h4>{{ config('app.name', 'Dang Quoc Dung') }}</h4>
-          <p>Phiên bản chạy thủ nghiệm</p>
+          <p>Phiên bản chạy thử nghiệm</p>
 
           {{-- <p>Chủ quản: {{ config('app.diachi', 'Dang Quoc Dung') }} - Điện thoại: {{ config('app.dienthoai', 'Dang Quoc Dung') }} - Thư điện tử: {{ config('app.email', 'Dang Quoc Dung') }}</p> --}}
           {{-- <p>Chịu trách nhiệm nội dung: {{ config('app.cio', 'Dang Quoc Dung') }} - Giám Đốc Sở TT-TT Hà Tĩnh.</p> --}}
