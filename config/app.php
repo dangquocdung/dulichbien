@@ -13,7 +13,7 @@ return [
     */
 
     'name' => 'Chuyên Trang Du lịch Biển Hà Tĩnh',
-    'diachi' => 'Sở Thông Tin - Truyền Thông Hà Tĩnh',
+    'diachi' => 'Sở Thông Tin và Truyền Thông tỉnh Hà Tĩnh',
     'dienthoai' => '(0239)3850288',
     'email' => 'admin@bienhatinh.vn',
     'cio' => 'Phan Tấn Linh',
