@@ -246,7 +246,7 @@
           var mapOptions = {
             zoom: 15,
             scrollwheel: false,
-            center: new google.maps.LatLng({{ config('app.toado','18.335534, 105.906581') }})
+            center: new google.maps.LatLng({{ config('app.toado','18.493842, 105.895654') }})
           };
 
           var map = new google.maps.Map(document.getElementById('googleMap'),
